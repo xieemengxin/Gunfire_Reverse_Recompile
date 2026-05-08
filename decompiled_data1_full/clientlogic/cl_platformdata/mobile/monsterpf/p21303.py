@@ -1,0 +1,56 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/monsterpf/p21303.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/monsterpf/p21303.pyc
+# Source Generated with Decompyle++
+# File: p21303.pyc (Python 3.6)
+
+import cl_math
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+
+def Action(skill):
+    pass
+
+
+def Halt(skill):
+    pass
+
+
+def End(skill):
+    pass
+
+
+def GetSkillCache():
+    return []
+
+from cl_perform.monsterpf import CPerform as CCustomPerform
+from cl_commondefines import DAM_TYPE_CORRISION, MONSTERPF_TYPE_ATTACK, NONE_DISTANCE
+from cl_pxlayer import PXMASK_BARRIER
+
+class CPerform(CCustomPerform):
+    m_SID = 21303
+    m_Name = '蜘蛛卫士-近战'
+    m_ExtPerform = ()
+    m_HaltInfo = { }
+    m_IgnoreHalt = { }
+    m_ActionInfo = {
+        1: Action }
+    m_HaltActionInfo = {
+        1: Halt }
+    m_EndActionInfo = {
+        1: End }
+    m_BaseAttrData = {
+        'ColdTime': 200,
+        'AttDistance': 3,
+        'ChargeTime': 0,
+        'DebuffProb': 2000,
+        'Att': 0,
+        'MaxCover': 1 }
+    m_ElementType = DAM_TYPE_CORRISION
+    m_IgnoreLayer = (PXMASK_BARRIER,)
+    m_SkillShotType = NONE_DISTANCE
+    m_AttackType = MONSTERPF_TYPE_ATTACK
+    m_ForbidRule = 0
+

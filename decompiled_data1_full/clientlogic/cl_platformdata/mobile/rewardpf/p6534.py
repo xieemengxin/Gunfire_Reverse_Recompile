@@ -1,0 +1,76 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/rewardpf/p6534.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/rewardpf/p6534.pyc
+# Source Generated with Decompyle++
+# File: p6534.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from . import CPerform as CCustomPerform
+from cl_commondefines import EQUIP_ROCKET_LAUNCHER, EQUIP_SNIPER, EQUIP_TYPE_CLOSEWEAPON, MAIN_HOLD, OBJ_SELF
+from cl_newformula import Func308
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTERADDWEAPON, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_UNHOLD_WEAPON, -1, 1, 0, 0)
+
+
+def Action2(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTERADDWEAPON, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_UNHOLD_WEAPON, -1, 1, 0, 0)
+
+
+def Action3(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTERADDWEAPON, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_UNHOLD_WEAPON, -1, 1, 0, 0)
+
+
+def Action4(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTERADDWEAPON, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_UNHOLD_WEAPON, -1, 1, 0, 0)
+
+
+def Action5(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTERADDWEAPON, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_UNHOLD_WEAPON, -1, 1, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    cl_evact.EventCBChangeAllWeaponAttr(oWarrior, oEventCB, 'FillTime', 0, (lambda *a: -500 * Func308(*a)), EQUIP_ROCKET_LAUNCHER)
+    cl_evact.EventCBChangeAllWeaponAttr(oWarrior, oEventCB, 'CrazyEff', (lambda *a: Func308(*a) * 500), 0, EQUIP_SNIPER)
+    cl_evact.EventGetTargetByType(oWarrior, oEventCB, OBJ_SELF)
+    if cl_evcon.CheckEventWeaponType(oWarrior, oEventCB, EQUIP_TYPE_CLOSEWEAPON):
+        cl_action.PassiveAddState(oWarrior, oEventCB.GetCBLifeCycle(), 1340, 0, {
+            'MoveSpeedMul': (lambda *a: Func308(*a) * 500) }, 1)
+    else:
+        cl_action.CommonRemoveOwnerState(oWarrior, oEventCB.GetCBLifeCycle(), 1340, 0)
+
+
+def DoCallBackAction1(oEventCB, oWarrior):
+    if not cl_condition.CheckWeaponTypeByHoldType(oWarrior, oEventCB.GetCBLifeCycle(), MAIN_HOLD, EQUIP_TYPE_CLOSEWEAPON):
+        cl_evact.EventGetTargetByType(oWarrior, oEventCB, OBJ_SELF)
+        cl_action.CommonRemoveOwnerState(oWarrior, oEventCB.GetCBLifeCycle(), 1340, 0)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 6534
+    m_Name = '爆发专精'
+    m_MaxLevel = 5
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1,
+        2: Action2,
+        3: Action3,
+        4: Action4,
+        5: Action5 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+

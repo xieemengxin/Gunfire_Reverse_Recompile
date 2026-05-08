@@ -1,0 +1,48 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_betreedata/EliteFar/bloodEliteSuck.pyc
+# RelativePath: clientlogic/cl_betreedata/EliteFar/bloodEliteSuck.pyc
+# Source Generated with Decompyle++
+# File: bloodEliteSuck.pyc (Python 3.6)
+
+import cl_betree.monsteragent
+data = {
+    'Name': 'bloodEliteSuck',
+    'ID': 0,
+    'AgentType': 'cl_betree.monsteragent',
+    'IsFSM': False,
+    'Ver': 154,
+    'Node': [
+        {
+            'ID': 1,
+            'Class': 'Sequence',
+            'Node': [
+                {
+                    'ID': 5,
+                    'Class': 'Action',
+                    'Attachment': ({
+                        'ID': 6,
+                        'Class': 'Precondition',
+                        'Method': (cl_betree.monsteragent.CAgent.StopMoving, ()),
+                        'Phase': 1,
+                        'Flag': 'precondition',
+                        'BinaryOperator': 'And' },),
+                    'Method': (cl_betree.monsteragent.CAgent.TurnToLockEnemy, (20, 1)),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 7,
+                    'Class': 'Action',
+                    'Attachment': ({
+                        'ID': 8,
+                        'Class': 'Effector',
+                        'Method': (cl_betree.monsteragent.CAgent.UseMovePosAsSkillEnd, ()),
+                        'Phase': 1,
+                        'Flag': 'effector' },),
+                    'Method': (cl_betree.monsteragent.CAgent.ChooseHateFlankPos, (5, 7, 0, 45)),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 9,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.UsePerformGroup, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None }] }] }

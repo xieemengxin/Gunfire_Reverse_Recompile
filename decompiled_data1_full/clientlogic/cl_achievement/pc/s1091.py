@@ -1,0 +1,46 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_achievement/pc/s1091.pyc
+# RelativePath: clientlogic/cl_achievement/pc/s1091.pyc
+# Source Generated with Decompyle++
+# File: s1091.pyc (Python 3.6)
+
+from cl_object.logging import AchievementLog
+from cl_commondefines import PF_SUBMSG_THROW, PLAYMODE_ROGUELIKE
+from cl_newformula import Func410
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from ..mobject import CAchieveStat as CCustom
+
+def EnableAction(oListener, oLifeCycle):
+    if cl_condition.CheckHero(oListener, oLifeCycle, 206) and cl_condition.CheckWarPlayMode(oListener, oLifeCycle, PLAYMODE_ROGUELIKE):
+        cl_action.CommonListenMsgCallBack(oListener, oLifeCycle, cl_msgcenter.MSG_WAR_PERFORM_END, PF_SUBMSG_THROW, 0, 0, 0)
+        cl_action.CommonListenMsgCallBack(oListener, oLifeCycle, cl_msgcenter.MSG_WAR_PLAYERSETTLE, -1, 1, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oListener):
+    if cl_evcon.CheckFromPointPerform(oListener, oEventCB, 1411, 0, 0) and cl_evcon.GetFormula(oListener, oEventCB, (lambda *a: Func410(*a, **{
+'sid': 32217 }))) >= 3000:
+        cl_evact.AchieveCBAddStat(oListener, oEventCB, 1)
+        cl_evact.AchieveRewardCheek(oListener, oEventCB, 1006)
+
+
+def DoCallBackAction1(oEventCB, oListener):
+    CustomAction(oListener, oEventCB, { })
+
+
+class CAchieveStat(CCustom):
+    m_SID = 1091
+    m_Name = '鹰击长空'
+    m_TargetValue = 1
+    m_Action = (EnableAction, None)
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1 }
+
+
+def CustomAction(oListener, oEventCB, dInfo):
+    AchievementLog.Debug('achievement1091 %d' % cl_evcon.GetFormula(oListener, oEventCB, (lambda *a: Func410(*a, **{
+'sid': 32217 }))))
+

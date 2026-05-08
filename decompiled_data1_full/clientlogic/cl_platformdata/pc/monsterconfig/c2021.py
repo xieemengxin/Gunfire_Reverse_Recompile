@@ -1,0 +1,60 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/monsterconfig/c2021.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/monsterconfig/c2021.pyc
+# Source Generated with Decompyle++
+# File: c2021.pyc (Python 3.6)
+
+from cl_commondefines import DEFEND_TREND_SHIELD, MISSING_DIS_HARD, MISSING_DIS_NORMAL, WARRIOR_NORFOOT
+from . import monsterconfigdata
+
+class CMonsterData(monsterconfigdata.CMonsterData):
+    m_DataSID = 2021
+    m_Shape = 2021
+    m_FightType = WARRIOR_NORFOOT
+    m_AttPerform = 20211
+    m_PerformList = (20212, 20213, 38028, 38029)
+    m_Betree = 'MonsterFourLeg.fourFuzzyFsm'
+    m_BetreeMap = {
+        'Default': {
+            0: 'MonsterFourLeg.fourFuzzyFsm' },
+        'Common': {
+            1: 'MonsterFourLeg.fourFuzzyFsm',
+            2: 'Common.FuzzyAreamoveFsm',
+            16: 'MonsterFourLeg.fourFuzzyFsm',
+            64: 'MonsterFourLeg.GlobalfourlegFsm' } }
+    m_DefaultPhase = 1
+    m_PhasePF = { }
+    m_PhaseHitPartToType = { }
+    m_AttrPlusPF = (6201, 6203)
+    m_DefendTrend = DEFEND_TREND_SHIELD
+    m_AIConfig = {
+        (1, 3): {
+            'PFAI': 20213 },
+        (1, 2): {
+            'PFAI': 20212 },
+        (0, 3): {
+            'PFAI': 20213 },
+        (1, 1): {
+            'PFAI': 20211 },
+        (0, 2): {
+            'PFAI': 20212 },
+        (0, 1): {
+            'PFAI': 20211 } }
+    m_CombatForce = 1
+    m_BornActionInfo = { }
+    m_CreateDelayFrame = 0
+    m_CreateEffect = 0
+    m_AccuracyFactor = 1
+    m_MissingDisType = {
+        1: MISSING_DIS_NORMAL,
+        2: MISSING_DIS_HARD,
+        3: MISSING_DIS_HARD }
+    m_DodgeCDTime = { }
+    m_BanPF = ()
+    m_SurvivorAttrPlus = (6251, 6253)
+    m_SurvivorBanPF = ()
+    m_AttackCost = 1
+    m_ExtraAIArgs = {
+        'FightMinDis': 4,
+        'FightMaxDis': 13,
+        'WaitPatrolRadius': 5 }
+

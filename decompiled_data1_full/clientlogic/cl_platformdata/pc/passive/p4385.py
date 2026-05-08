@@ -1,0 +1,44 @@
+# Path: /Users/caoguangpei/个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/passive/p4385.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/passive/p4385.pyc
+# Source Generated with Decompyle++
+# File: p4385.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.passive import CPerform as CCustomPerform
+from cl_commondefines import ATTACKERSUBMSG_NORMAL
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.PassiveCycleExecCBFuncAction(oWarrior, oLifeCycle, 100, 100, 0)
+    cl_action.CommonListenSnapshotMsg(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_RECEIVEDAM, ATTACKERSUBMSG_NORMAL, 1, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    cl_action.CommonAddSourceWeaponPFBullet(oWarrior, oEventCB.GetCBLifeCycle(), 9600, 2000)
+
+
+def DoCallBackAction1(oEventCB, oWarrior):
+    if cl_evcon.CheckFromPointPerform(oWarrior, oEventCB, 9417, 0, 0) and cl_evcon.CheckSkillCollectInfo(oWarrior, oEventCB, 'iDamCnt', 0) == 0:
+        cl_evact.EventCBAddCollectInfo(oWarrior, oEventCB, 'iDamCnt', 1, 0)
+        cl_action.CommonAddSourceWeaponPFBullet(oWarrior, oEventCB.GetCBLifeCycle(), 9600, 1400)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 4385
+    m_Name = '追踪导弹-层数恢复'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1 }
+    m_BaseArgData = { }
+    m_DieDisable = 1
+

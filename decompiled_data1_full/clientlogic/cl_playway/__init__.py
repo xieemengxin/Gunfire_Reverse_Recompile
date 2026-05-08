@@ -1,0 +1,47 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_playway/__init__.pyc
+# RelativePath: clientlogic/cl_playway/__init__.pyc
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.6)
+
+from cl_cscommondef import DAY_TRIAL_ADD_RELIC_WHEN_RELIFE, DAY_TRIAL_BEAD_DROP_SCENEEVENT_DROP, DAY_TRIAL_CHANGE_MINIGAME_INFO, DAY_TRIAL_USE_PERFORM_WHEN_DRIO_DISPPEAR, DAY_TRIAL_FILTER_ASSIGN_MAINLEVEL, DAY_TRIAL_FILTER_SUBLIME, DAY_TRIAL_ADD_RELIC_WHEN_PICK_RELIC, DAY_TRIAL_RANDOM_RELIC_IN_LIST, DAY_TRIAL_CHANGE_MAINLV_ITEMCHOOSE, DAY_TRIAL_CHALLENGEOVER_ADD_SKILL, DAY_TRIAL_LEVELGOAL_ADD_SKILL, DAY_TRIAL_FILTER_ASSIGN_HIDELEVEL, DAY_TRIAL_CHANGE_WEAPON_DEBUFF_PROB, DAY_TRIAL_CHANGE_WEAPON_DAM_TYPE, DAY_TRIAL_CHANGE_ELEMENT_DAM, DAY_TRIAL_CHANGE_MONSTER_AF, DAY_TRIAL_SUMMON_ADD_SKILL, DAY_TRIAL_REPLACE_MONSTER, DAY_TRIAL_CHANGE_MONSTER_CNT, DAY_TRIAL_IGNORECHALLENGE, DAY_TRIAL_CHANGE_CHOOSE_CNT, DAY_TRIAL_SET_MAX_RELIC, DAY_TRIAL_PLAYER_RANDOM_RELIC, DAY_TRIAL_REPLACENPC, DAY_TRIAL_PLAYER_ADD_RELIC, DAY_TRIAL_MONSTER_ADD_SKILL, DAY_TRIAL_PLAYER_ADD_SKILL, DAY_TRIAL_SET_GOLDENCUP_REFRESH, DAY_TRIAL_SET_REFRESH_RELIC, DAY_TRIAL_BUILD_ADD_SKILL, DAY_TRIAL_EXTRA_INFO
+from . import mobject
+g_DayTrialClass = {
+    DAY_TRIAL_EXTRA_INFO: mobject.CExtraInfo,
+    DAY_TRIAL_BUILD_ADD_SKILL: mobject.CBuildAddSkill,
+    DAY_TRIAL_SET_REFRESH_RELIC: mobject.CSetRelicRefresh,
+    DAY_TRIAL_SET_GOLDENCUP_REFRESH: mobject.CSetGoldencupRefresh,
+    DAY_TRIAL_ADD_RELIC_WHEN_RELIFE: mobject.CAddRelicWhenRelife,
+    DAY_TRIAL_BEAD_DROP_SCENEEVENT_DROP: mobject.CBeadDropSceneEventDrop,
+    DAY_TRIAL_CHANGE_MINIGAME_INFO: mobject.CChangeMiniGameInfo,
+    DAY_TRIAL_USE_PERFORM_WHEN_DRIO_DISPPEAR: mobject.CUsePerformWhenDropDisppear,
+    DAY_TRIAL_FILTER_ASSIGN_MAINLEVEL: mobject.CFilterAssignMainLevel,
+    DAY_TRIAL_FILTER_SUBLIME: mobject.CFilterSublime,
+    DAY_TRIAL_ADD_RELIC_WHEN_PICK_RELIC: mobject.CAddRelicWhenPickRelic,
+    DAY_TRIAL_RANDOM_RELIC_IN_LIST: mobject.CRandomRelicInList,
+    DAY_TRIAL_CHANGE_MAINLV_ITEMCHOOSE: mobject.CChangeMainLvItemChoose,
+    DAY_TRIAL_CHALLENGEOVER_ADD_SKILL: mobject.CAddPerformOnChallengeOver,
+    DAY_TRIAL_LEVELGOAL_ADD_SKILL: mobject.CAddPerformOnLevelNodeGoalOK,
+    DAY_TRIAL_FILTER_ASSIGN_HIDELEVEL: mobject.CFilterAssignHideLevel,
+    DAY_TRIAL_CHANGE_WEAPON_DEBUFF_PROB: mobject.CChangeWeaponDebuffProb,
+    DAY_TRIAL_CHANGE_WEAPON_DAM_TYPE: mobject.CChangeWeaponDamType,
+    DAY_TRIAL_CHANGE_ELEMENT_DAM: mobject.CAddPerformOnRoomStart,
+    DAY_TRIAL_CHANGE_MONSTER_AF: mobject.CChangeMonsteraf,
+    DAY_TRIAL_SUMMON_ADD_SKILL: mobject.CSummonAddSkill,
+    DAY_TRIAL_REPLACE_MONSTER: mobject.CReplaceMonster,
+    DAY_TRIAL_CHANGE_MONSTER_CNT: mobject.CChangeLayerMonsterCnt,
+    DAY_TRIAL_IGNORECHALLENGE: mobject.CIgnoreChallenge,
+    DAY_TRIAL_CHANGE_CHOOSE_CNT: mobject.CChangeLevelChooseCnt,
+    DAY_TRIAL_SET_MAX_RELIC: mobject.CSetMaxRelic,
+    DAY_TRIAL_PLAYER_RANDOM_RELIC: mobject.CRandomRelic,
+    DAY_TRIAL_REPLACENPC: mobject.CReplaceNpc,
+    DAY_TRIAL_PLAYER_ADD_RELIC: mobject.CPlayerAddRelic,
+    DAY_TRIAL_MONSTER_ADD_SKILL: mobject.CMonsterAddSkill,
+    DAY_TRIAL_PLAYER_ADD_SKILL: mobject.CPlayerAddSkill }
+
+def NewDayTrial(oDayTrial, oGame, iSourcItemSID, iType, tParam):
+    if iType not in g_DayTrialClass:
+        return None
+    oPlayWay = g_DayTrialClass[iType](oDayTrial, oGame, iSourcItemSID)
+    oPlayWay.Init(tParam)
+    return oPlayWay
+

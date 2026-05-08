@@ -1,0 +1,33 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/attrplus/p6204.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/attrplus/p6204.pyc
+# Source Generated with Decompyle++
+# File: p6204.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.attrplus import CPerform as CCustomPerform
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonChangeAttr(oWarrior, oLifeCycle, 'AttSpeed', -5000, 0, None)
+    cl_action.CommonChangeAttr(oWarrior, oLifeCycle, 'Att', 2000, 0, None)
+    cl_action.CommonChangeAttr(oWarrior, oLifeCycle, 'HPMax', 20000, 0, None)
+    cl_action.CommonChangeAllAtivePerformAttr(oWarrior, oLifeCycle, 'ColdTime', -5000, 0)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 6204
+    m_Name = '高效'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = { }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+

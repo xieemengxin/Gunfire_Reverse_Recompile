@@ -1,0 +1,39 @@
+# Path: /Users/caoguangpei/个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/passive/p4140.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/passive/p4140.pyc
+# Source Generated with Decompyle++
+# File: p4140.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.passive import CPerform as CCustomPerform
+from cl_commondefines import HP_RADIO_SUB
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenHPThreshold(oWarrior, oLifeCycle, 30, HP_RADIO_SUB, 0)
+    cl_action.CommonSubPointPerformColdTime(oWarrior, oLifeCycle, 32822, 0, 100)
+    cl_action.CommonChangePerformAttr(oWarrior, oLifeCycle, 32822, 'ColdTime', -1500, 0)
+    cl_action.CommonChangePerformAttr(oWarrior, oLifeCycle, 32821, 'ColdTime', -3000, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    cl_evact.EventCBSetPhase(oWarrior, oEventCB, 4)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 4140
+    m_Name = '三幕精英虚妄僧-阶段3'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+

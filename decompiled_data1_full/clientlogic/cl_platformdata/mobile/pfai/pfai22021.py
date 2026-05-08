@@ -1,0 +1,57 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/pfai/pfai22021.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/pfai/pfai22021.pyc
+# Source Generated with Decompyle++
+# File: pfai22021.pyc (Python 3.6)
+
+import cl_betree.pfai.mobject as pfaiobj
+import cl_condition
+from cl_commondefines import MONSTER_PFAI_CATCH, MONSTER_PFAI_DODGE, PF_GROUP_CHECK_FIRST
+
+class CPerformAI(pfaiobj.CBasePerformAI):
+    m_SID = 22021
+    m_Name = '【第三幕】重型远程-机枪怪'
+    m_FillBulletData = (22023, 0, 100)
+    m_UseBulletPF = (22021,)
+    m_PFGroup = {
+        1001: {
+            0: [
+                22021,
+                50,
+                65,
+                0] },
+        1002: {
+            0: [
+                22022,
+                1,
+                1,
+                0] },
+        1003: {
+            0: [
+                22023,
+                1,
+                1,
+                0] } }
+    m_GroupOfPF = {
+        22021: [
+            1001],
+        22022: [
+            1002],
+        22023: [
+            1003] }
+    m_ChoosePFInfo = {
+        MONSTER_PFAI_DODGE: { },
+        MONSTER_PFAI_CATCH: {
+            (0, 4, -1, 100, -1, 100, 0): [
+                {
+                    'choose': {
+                        1002: 10 } }],
+            (4, 99, -1, 100, -1, 100, 0): [
+                {
+                    'choose': {
+                        1001: 10 } }] } }
+    m_CheckPFCanUse = { }
+    m_PFGroupCheck = {
+        1001: PF_GROUP_CHECK_FIRST,
+        1002: PF_GROUP_CHECK_FIRST,
+        1003: PF_GROUP_CHECK_FIRST }
+

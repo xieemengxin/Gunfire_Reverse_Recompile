@@ -1,0 +1,156 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/throw/p8009.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/throw/p8009.pyc
+# Source Generated with Decompyle++
+# File: p8009.pyc (Python 3.6)
+
+import cl_math
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.cartoon.defines import DelegateDirectPosCartoon, TimerCartoon
+from cl_commondefines import ATT_SHAPE_SPHERE, CRT_CHECK_SERVER, OBJ_ALL, OBJ_ALLNOSELF, OBJ_ENEMY, WARRIOR_BUILD, WARRIOR_MONSTER, WARRIOR_SERVANT, WARRIOR_SUMMON
+
+class CCartoon0(DelegateDirectPosCartoon):
+    m_SID = 0
+    
+    def Active(cls, skill):
+        cl_action.SendCurCartoonTriggerMsg(skill)
+
+    Active = classmethod(Active)
+    
+    def End(cls, skill):
+        pass
+
+    End = classmethod(End)
+    
+    def Hit(cls, skill):
+        if cl_action.CheckVictimType(skill, WARRIOR_SERVANT, OBJ_ALL):
+            if cl_action.GetTalentLevel(skill, 3318) == 0:
+                cl_action.PerformCure(skill, cl_action.ToInt(skill, cl_action.GetSkillVictimAttr(skill, 'HPMax') * 0.25))
+            elif cl_action.GetTalentLevel(skill, 3318) == 1:
+                cl_action.PerformCure(skill, cl_action.ToInt(skill, cl_action.GetSkillVictimAttr(skill, 'HPMax') * 0.4))
+            elif cl_action.GetTalentLevel(skill, 3318) == 2:
+                cl_action.PerformCure(skill, cl_action.ToInt(skill, cl_action.GetSkillVictimAttr(skill, 'HPMax') * 0.45))
+            elif cl_action.GetTalentLevel(skill, 3318) == 3:
+                cl_action.PerformCure(skill, cl_action.ToInt(skill, cl_action.GetSkillVictimAttr(skill, 'HPMax') * 0.5))
+            elif cl_action.CheckVictimType(skill, WARRIOR_MONSTER, OBJ_ENEMY) or cl_action.CheckVictimType(skill, WARRIOR_BUILD, OBJ_ENEMY) or cl_action.CheckVictimType(skill, WARRIOR_SUMMON, OBJ_ENEMY):
+                cl_action.PerformDamage(skill, {
+                    'Att': skill.m_Cache['Att'] * cl_action.GetSkillCustomData(skill, 'DamMul') })
+
+    Hit = classmethod(Hit)
+    
+    def HitStatic(cls, skill):
+        pass
+
+    HitStatic = classmethod(HitStatic)
+    
+    def Trigger(cls, skill):
+        pass
+
+    Trigger = classmethod(Trigger)
+    
+    def InitSuccess(cls, skill, index, cartoon):
+        if skill.m_CheckType == CRT_CHECK_SERVER:
+            cls.EnableCtrl(skill, cl_action.CrtArgCustomPos(skill, cartoon), (0, 0, 0), [
+                skill.m_Cache['Radius']], attshape = ATT_SHAPE_SPHERE, targettype = OBJ_ALLNOSELF, pierceStatic = False, explosion = True)
+
+    InitSuccess = classmethod(InitSuccess)
+
+
+class CCartoon1(TimerCartoon):
+    m_SID = 1
+    
+    def Active(cls, skill):
+        pass
+
+    Active = classmethod(Active)
+    
+    def End(cls, skill):
+        pass
+
+    End = classmethod(End)
+    
+    def Hit(cls, skill):
+        pass
+
+    Hit = classmethod(Hit)
+    
+    def HitStatic(cls, skill):
+        pass
+
+    HitStatic = classmethod(HitStatic)
+    
+    def Trigger(cls, skill):
+        cartoon = { }
+        CCartoon0.Init(skill, cartoon, casting = 0, index = 0)
+
+    Trigger = classmethod(Trigger)
+    
+    def InitSuccess(cls, skill, index, cartoon):
+        if skill.m_CheckType == CRT_CHECK_SERVER:
+            cls.EnableCtrl(skill, 4, 1)
+
+    InitSuccess = classmethod(InitSuccess)
+
+
+def Action(skill):
+    cartoon = { }
+    CCartoon1.Init(skill, cartoon, casting = 0, index = 0)
+
+
+def Halt(skill):
+    pass
+
+
+def End(skill):
+    pass
+
+
+def GetSkillCacheIndex():
+    return []
+
+
+def GetOtherMonster():
+    return []
+
+from cl_perform.throw import CPerform as CCustomPerform
+from cl_commondefines import DAM_TYPE_NORMAL
+
+class CPerform(CCustomPerform):
+    m_SID = 8009
+    m_Name = '被动飞弹爆炸'
+    m_ExtPerform = ()
+    m_HaltInfo = { }
+    m_IgnoreHalt = { }
+    m_ActionInfo = {
+        1: Action }
+    m_HaltActionInfo = {
+        1: Halt }
+    m_EndActionInfo = {
+        1: End }
+    m_ElementType = DAM_TYPE_NORMAL
+    m_BaseAttrData = {
+        'ColdTime': 0,
+        'AttDistance': 0,
+        'MaxCover': 1,
+        'BulletSID': 0,
+        'Att': 50000,
+        'CrazyEff': 10000,
+        'BulletSpeed': 80,
+        'DebuffProb': 0,
+        'ExplodeDelay': 0,
+        'Radius': 6,
+        'BulletVerticalAcc': 0,
+        'AddStateTime': 600,
+        'KeepTime': 0,
+        'DamInterval': 4,
+        'Pierce': 0,
+        'TriggerTimes': 1,
+        'MinUseEnergy': 0 }
+    m_ForbidRule = 0
+    m_CheckForbid = 0
+    m_UnCrtByOwnerSign = 1
+    m_AIPerformDam = 2000
+

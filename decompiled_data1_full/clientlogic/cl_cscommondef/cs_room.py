@@ -1,0 +1,23 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_cscommondef/cs_room.pyc
+# RelativePath: clientlogic/cl_cscommondef/cs_room.pyc
+# Source Generated with Decompyle++
+# File: cs_room.pyc (Python 3.6)
+
+ROOMCREATE_TYPE_SUCCESS = 0
+ROOMCREATE_TYPE_NOFS = 1
+ROOMCREATE_TYPE_TIMEOUT = 2
+ROOMCREATE_TYPE_ROOMERR = 3
+ROOMCREATE_MAXCNT = 3
+SETTLE_DIRECTLEAVE = 1
+SETTLE_LOSEWAR = 2
+SETTLE_FINISHWAR = 3
+SETTLE_SYSKICK = 4
+SETTLE_MASTERLEAVE = 5
+SETTLE_TRANSFER = 6
+SETTLE_HANGUP = 7
+VOTE_QUIT = 0
+VOTE_CONTINUE = 1
+LEAVE_TYPE_NORECORDE = 1
+LEAVE_TYPE_RECORDE = 2
+SETTLE_OVER_NORMAL = 0
+SETTLE_OVER_FAIL = 1

@@ -1,0 +1,11 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/herogradepf/__init__.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/herogradepf/__init__.pyc
+# Source Generated with Decompyle++
+# File: __init__.pyc (Python 3.6)
+
+from cl_perform.passive import CPerform
+from cl_commondefines import PF_TYPE_HEROGRADE
+
+class CHeroGradePassive(CPerform):
+    m_PFType = PF_TYPE_HEROGRADE
+

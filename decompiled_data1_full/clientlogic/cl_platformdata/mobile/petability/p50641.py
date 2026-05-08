@@ -1,0 +1,59 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/petability/p50641.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/petability/p50641.pyc
+# Source Generated with Decompyle++
+# File: p50641.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.petability import CPetAbility as CCustomPerform
+from cl_commondefines import OBJ_SELF, PET_ABILITY_HIGH, PET_ABILITY_TYPE_ONLYMAIN, WARRIOR_PET_MINI
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenOwnerMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_ADD_MINICLONE, -1, 0)
+    cl_action.CommonDirectEventCBFunc(oWarrior, oLifeCycle, 2, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    cl_evact.EventCBGetEventMiniClone(oWarrior, oEventCB)
+    cl_evact.PassiveAddTargetState(oWarrior, oEventCB, 33344, 0, { }, 1, 0, 0)
+    if not cl_evcon.CheckReason(oWarrior, oEventCB, 'EnterBattle', 0):
+        cl_evact.EventCBGetTargetByBelongs(oWarrior, oEventCB)
+        cl_evact.EventCBAddTargetStateCount(oWarrior, oEventCB, 33345, 5, 1, 0, 2000)
+
+
+def DoCallBackAction2(oEventCB, oWarrior):
+    cl_evact.EventCBGetTargetByBelongs(oWarrior, oEventCB)
+    cl_evact.PassiveAddTargetState(oWarrior, oEventCB, 33345, 0, { }, 1, 0, 0)
+    cl_evact.EventGetTargetByType(oWarrior, oEventCB, OBJ_SELF)
+    if not cl_evcon.CheckFightType(oWarrior, oEventCB, WARRIOR_PET_MINI):
+        cl_evact.PassiveCBAddState(oWarrior, oEventCB, 33344, 0, { }, 0, 0, 0)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 50641
+    m_Name = 'M1'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        2: DoCallBackAction2 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+    m_NeedLockTarget = 0
+    m_EnableType = PET_ABILITY_TYPE_ONLYMAIN
+    m_Quality = PET_ABILITY_HIGH
+    m_LimitPet = ()
+    m_ExcludePet = ()
+    m_Weight = 0
+    m_SpellPower = 0
+    m_AutoCDCallBack = 0
+    m_PetAttr = { }
+

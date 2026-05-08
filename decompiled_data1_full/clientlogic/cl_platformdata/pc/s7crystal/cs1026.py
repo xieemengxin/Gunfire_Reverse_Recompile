@@ -1,0 +1,22 @@
+# Path: /Users/caoguangpei/个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/s7crystal/cs1026.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/s7crystal/cs1026.pyc
+# Source Generated with Decompyle++
+# File: cs1026.pyc (Python 3.6)
+
+from cl_seasonplay.season7.crystal import CCrystalData
+
+class CCrystal(CCrystalData):
+    m_SID = 1026
+    m_Name = '四向 ↗↗→↑'
+    m_CanRotate = True
+    m_MaxPoint = 20
+    m_CanChoosePoint = {
+        10: 1,
+        11: 1,
+        12: 1 }
+    m_GridConfig = {
+        (0, 1): (1, 5),
+        (1, 0): (1, 5),
+        (2, 2): (1, 5),
+        (1, 1): (1, 5) }
+

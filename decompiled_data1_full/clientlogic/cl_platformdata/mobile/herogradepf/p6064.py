@@ -1,0 +1,40 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/herogradepf/p6064.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/herogradepf/p6064.pyc
+# Source Generated with Decompyle++
+# File: p6064.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from . import CHeroGradePassive as CCustomPerform
+from cl_newformula import Func529
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_COMCOSTBAGBULLET, -1, 0, 0, 0)
+    cl_action.PassiveAddState(oWarrior, oLifeCycle, 32916, 0, { }, 1)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    if not cl_evcon.CheckCostBulletType(oWarrior, oEventCB, 4508) and cl_evcon.CheckHasState(oWarrior, oEventCB, 32774):
+        cl_evact.EventCBSubCareerPerformColdTime(oWarrior, oEventCB, (lambda *a: 100 * Func529(*a)), 0)
+        cl_action.PassiveAddState(oWarrior, oEventCB.GetCBLifeCycle(), 32809, 0, { }, 1)
+        cl_evact.PassiveSetStateCount(oWarrior, oEventCB, 32809, (lambda *a: Func529(*a)))
+
+
+class CPerform(CCustomPerform):
+    m_SID = 6064
+    m_Name = '千岁lv.4'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+

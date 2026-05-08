@@ -1,0 +1,59 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_betreedata/Common/patrolGoback.pyc
+# RelativePath: clientlogic/cl_betreedata/Common/patrolGoback.pyc
+# Source Generated with Decompyle++
+# File: patrolGoback.pyc (Python 3.6)
+
+import cl_betree.monsteragent
+data = {
+    'Name': 'patrolGoback',
+    'ID': 0,
+    'AgentType': 'cl_betree.monsteragent',
+    'IsFSM': False,
+    'Ver': 14,
+    'Node': [
+        {
+            'ID': 1,
+            'Class': 'Sequence',
+            'Node': [
+                {
+                    'ID': 2,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.StandUp, (25,)),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 4,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.SetFightStatusDefault, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 5,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.SetActionSMPatrol, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 6,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.NextPatrolPos, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 9,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.HaltPerform, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 7,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.FacePath, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None },
+                {
+                    'ID': 8,
+                    'Class': 'Action',
+                    'Method': (cl_betree.monsteragent.CAgent.MoveToPos, ()),
+                    'ResultOption': 0,
+                    'ResultFunctor': None }] }] }

@@ -1,0 +1,51 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/passive/p50720.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/passive/p50720.pyc
+# Source Generated with Decompyle++
+# File: p50720.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.passive import CPerform as CCustomPerform
+from cl_commondefines import PET_ENTER_BATTLE, PET_LEAVE_BATTLE
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonDirectEventCBFunc(oWarrior, oLifeCycle, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_SET_CURPET, PET_ENTER_BATTLE, 1, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_SET_CURPET, PET_LEAVE_BATTLE, 2, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    cl_evact.EventCBGetCurPet(oWarrior, oEventCB)
+    cl_evact.PassiveAddTargetState(oWarrior, oEventCB, 33301, 0, { }, 1, 0, None)
+
+
+def DoCallBackAction1(oEventCB, oWarrior):
+    cl_evact.EventCBGetEventPet(oWarrior, oEventCB)
+    cl_evact.PassiveAddTargetState(oWarrior, oEventCB, 33301, 0, { }, 1, 0, None)
+
+
+def DoCallBackAction2(oEventCB, oWarrior):
+    cl_evact.EventCBGetEventPet(oWarrior, oEventCB)
+    cl_evact.PassiveCBRemoveTargetState(oWarrior, oEventCB, 33301, 1, 0, 0)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 50720
+    m_Name = '#NT#降服技能1'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1,
+        2: DoCallBackAction2 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+

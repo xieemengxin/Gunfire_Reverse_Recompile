@@ -1,0 +1,57 @@
+# Path: /Users/caoguangpei/个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/state/st32961.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/state/st32961.pyc
+# Source Generated with Decompyle++
+# File: st32961.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_formula
+import cl_evact
+import cl_evcon
+import cl_state
+from cl_commondefines import ATTACKERSUBMSG_NORMAL, EQUIP_HANDGUN, EQUIP_TYPE_FUNDAMENTALWEAPON, OBJ_SELF, STATE_ADD_REPLACE, STATE_CLS_HELP, STATE_EFF_NONE
+from cl_newformula import Func369
+
+def StateActAction(oTarget, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oTarget, oLifeCycle, cl_msgcenter.MSG_WAR_WEAPONFIRE, -1, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oTarget, oLifeCycle, cl_msgcenter.MSG_WAR_DEALTOTALDAM, ATTACKERSUBMSG_NORMAL, 1, 0, 0)
+
+
+def CallBack0(oEventCB, oTarget):
+    if cl_evcon.StateCBGetSelfCount(oTarget, oEventCB) > 0:
+        if cl_evcon.CheckEventWeaponType(oTarget, oEventCB, EQUIP_HANDGUN) or cl_evcon.CheckEventWeaponType(oTarget, oEventCB, EQUIP_TYPE_FUNDAMENTALWEAPON):
+            cl_evact.StateAddSelfCount(oTarget, oEventCB, -1, None)
+            cl_evact.StateCBAddSkillCollectInfo(oTarget, oEventCB, 'pf3214_last', 1)
+
+
+def CallBack1(oEventCB, oTarget):
+    if cl_evcon.CheckSkillCollectInfo(oTarget, oEventCB, 'pf3214_last', 0):
+        cl_evact.StateCBAddSelfStateStatistics(oTarget, oEventCB, (lambda *a: Func369(*a)), 'AllWeaponDamage')
+        if cl_evcon.CheckStateStatistics(oTarget, oEventCB, 32961, 'AllWeaponDamage') > 1500000000:
+            cl_evact.StateCBSetSelfStateStatistics(oTarget, oEventCB, 'AllWeaponDamage', 1500000000)
+
+
+class CState(cl_state.CState):
+    m_SID = 32961
+    m_Name = '战斗核心'
+    m_IsShow = 1
+    m_Type = STATE_CLS_HELP
+    m_EffType = STATE_EFF_NONE
+    m_AddType = STATE_ADD_REPLACE
+    m_TargetType = OBJ_SELF
+    m_MinCount = 0
+    m_MaxCount = 3
+    m_StartCount = 3
+    m_PerCountTime = 0
+    m_SyncMax = 0
+    m_OnlyShowTarget = ()
+    m_SaveToRecord = 0
+    m_ClientData = { }
+    m_Desc = '0'
+    m_ShowStateCnt = 1
+    m_Action = (StateActAction, None)
+    m_CBFuncAction = {
+        0: CallBack0,
+        1: CallBack1 }
+

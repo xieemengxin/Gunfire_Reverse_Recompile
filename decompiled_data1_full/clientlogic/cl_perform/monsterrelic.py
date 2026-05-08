@@ -1,0 +1,16 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_perform/monsterrelic.pyc
+# RelativePath: clientlogic/cl_perform/monsterrelic.pyc
+# Source Generated with Decompyle++
+# File: monsterrelic.pyc (Python 3.6)
+
+from cl_perform.passive import CPerform
+from cl_commondefines import PF_TYPE_RELIC, RELIC_TYPE_NORMAL
+
+class CMonsterRelic(CPerform):
+    m_PFType = PF_TYPE_RELIC
+    m_RelicType = RELIC_TYPE_NORMAL
+    m_HeroRelic = 0
+    m_Quality = 0
+    m_ExcludeRelic = ()
+    m_MonsterRule = { }
+

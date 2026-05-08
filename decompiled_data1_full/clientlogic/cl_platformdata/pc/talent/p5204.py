@@ -1,0 +1,47 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/pc/talent/p5204.pyc
+# RelativePath: clientlogic/cl_platformdata/pc/talent/p5204.pyc
+# Source Generated with Decompyle++
+# File: p5204.pyc (Python 3.6)
+
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from . import CTalent as CCustomPerform
+from cl_commondefines import ATTACKERSUBMSG_NORMAL, DAM_TYPE_NORMAL, OBJ_ATTACK
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_RECEIVEDAM, ATTACKERSUBMSG_NORMAL, 0, 0, 0)
+    cl_action.CommonListenMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_DP, -1, 1, 0, 0)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    if cl_evcon.CheckEleDamType(oWarrior, oEventCB, DAM_TYPE_NORMAL, -1) == 0:
+        cl_evact.EventChangeDamFactor(oWarrior, oEventCB, OBJ_ATTACK, 0, 12500, 0, '')
+
+
+def DoCallBackAction1(oEventCB, oWarrior):
+    cl_evact.EventChangeSkillCache(oWarrior, oEventCB, 'DebuffProb', 0, -5000)
+
+
+class CPerform(CCustomPerform):
+    m_SID = 5204
+    m_Name = '元素增幅'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+    m_MaxUpgradeTimes = 0
+    m_TalentType = 4
+    m_IsRareTalent = 1
+    m_Career = 0
+

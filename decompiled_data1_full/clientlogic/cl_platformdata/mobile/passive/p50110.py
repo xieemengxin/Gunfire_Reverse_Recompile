@@ -1,0 +1,53 @@
+# Path: /Users//个人空间/04 Gunfire/converted/converted_data1/clientlogic/cl_platformdata/mobile/passive/p50110.pyc
+# RelativePath: clientlogic/cl_platformdata/mobile/passive/p50110.pyc
+# Source Generated with Decompyle++
+# File: p50110.pyc (Python 3.6)
+
+from cl_platformdata.custom.passive.customaction import CustomAction50102 as CustomAction1
+from cl_platformdata.custom.passive.customaction import CustomAction50110 as CustomAction2
+from cl_platformdata.custom.passive.customaction import ClearAddToxicNumInfo as CustomAction3
+import cl_msgcenter
+import cl_action
+import cl_condition
+import cl_evact
+import cl_evcon
+from cl_perform.passive import CPerform as CCustomPerform
+
+def Action1(oWarrior, oLifeCycle):
+    cl_action.CommonListenDeviceMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WAR_AFTER_ADD_TOXICSTATECOUNT, -1, 0)
+    cl_action.CommonListenWarMgrMsgCallBack(oWarrior, oLifeCycle, cl_msgcenter.MSG_WARMGR_LEVELNODEGOALOK, -1, 2)
+
+
+def DoCallBackAction0(oEventCB, oWarrior):
+    CustomAction1(oWarrior, oEventCB, {
+        'TriggerNum': 4 })
+
+
+def DoCallBackAction1(oEventCB, oWarrior):
+    CustomAction2(oWarrior, oEventCB, {
+        'DamMul': 1,
+        'pf7009_throw': 1,
+        'Perform': 8009 })
+
+
+def DoCallBackAction2(oEventCB, oWarrior):
+    CustomAction3(oWarrior, oEventCB, { })
+
+
+class CPerform(CCustomPerform):
+    m_SID = 50110
+    m_Name = '#NT#毒气组件硬木飞弹被动'
+    m_MaxLevel = 1
+    m_MaxStack = 1
+    m_ExtPerform = ()
+    m_EnableActionInfo = {
+        1: Action1 }
+    m_DisableActionInfo = { }
+    m_ColdDownCBActionInfo = { }
+    m_CBFuncAction = {
+        0: DoCallBackAction0,
+        1: DoCallBackAction1,
+        2: DoCallBackAction2 }
+    m_BaseArgData = { }
+    m_DieDisable = 0
+
