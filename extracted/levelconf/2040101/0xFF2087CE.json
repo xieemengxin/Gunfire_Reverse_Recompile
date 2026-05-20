@@ -1,0 +1,161 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 2,
+  "Merge": 0,
+  "SpawnRule": [],
+  "area": 1,
+  "bornpos": [
+    {
+      "Facing": [
+        0.5536136,
+        0.0,
+        0.8327737
+      ],
+      "Pos": [
+        163.61348,
+        -18.1690845,
+        131.286911
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.4492889,
+        0.0,
+        0.893386543
+      ],
+      "Pos": [
+        165.771591,
+        -18.2330837,
+        130.484421
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.115002565,
+        0.0,
+        0.993365169
+      ],
+      "Pos": [
+        168.3018,
+        -18.2330837,
+        130.0786
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.70743,
+        0.0,
+        0.7067834
+      ],
+      "Pos": [
+        161.781616,
+        -18.2330837,
+        133.102951
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [],
+    "Cond": {}
+  },
+  "lineob": [],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "movebuildpos": null,
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [
+      {
+        "Facing": [
+          0.7414765,
+          0.0,
+          -0.6709789
+        ],
+        "GlobalPrefab": 6005001,
+        "Paths": [],
+        "Pos": [
+          165.3,
+          -17.84,
+          140.85
+        ],
+        "SID": 6005,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          0.7414765,
+          0.0,
+          -0.6709789
+        ],
+        "GlobalPrefab": 6002001,
+        "Paths": [],
+        "Pos": [
+          167.627136,
+          -17.785,
+          143.420441
+        ],
+        "SID": 6002,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "transfer": [
+      {
+        "Facing": [
+          -0.6886496,
+          0.0,
+          -0.7250943
+        ],
+        "GlobalPrefab": 1402002,
+        "Paths": [],
+        "Pos": [
+          176.28,
+          -17.31,
+          149.32
+        ],
+        "SID": 1402,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

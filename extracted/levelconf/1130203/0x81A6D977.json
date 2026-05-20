@@ -1,0 +1,623 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 0,
+  "Merge": 0,
+  "SpawnRule": [],
+  "area": 23,
+  "bornpos": [],
+  "dynabuild": [],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [],
+    "Cond": {}
+  },
+  "lineob": [
+    {
+      "Angle": [
+        270.0,
+        76.6544952,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        491.148468,
+        17.6029987,
+        -253.872025
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321001,
+      "SID": 1215,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        76.6544952,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        491.741,
+        17.718,
+        -253.419
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322001,
+      "SID": 1216,
+      "Scale": [
+        1.300001,
+        1.30000055,
+        1.30000091
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        155.17244,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        471.288,
+        17.47,
+        -230.688
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321002,
+      "SID": 1215,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        155.17244,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        470.879639,
+        17.448,
+        -230.070786
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322002,
+      "SID": 1216,
+      "Scale": [
+        1.30000162,
+        1.30000091,
+        1.30000091
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        278.436279,
+        30.0000763,
+        68.8387756
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        443.817,
+        19.476,
+        -232.726
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321003,
+      "SID": 1215,
+      "Scale": [
+        1.0,
+        1.0,
+        1.00000012
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        278.436279,
+        30.0000668,
+        11.1734886
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        444.50473,
+        19.3756752,
+        -232.231735
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322003,
+      "SID": 1216,
+      "Scale": [
+        1.30000091,
+        1.30000114,
+        1.30000114
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        253.4589,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        445.506,
+        18.637,
+        -268.732
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321004,
+      "SID": 1215,
+      "Scale": [
+        1.00000024,
+        1.00000024,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        253.4589,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        446.226,
+        18.6899986,
+        -269.435
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322004,
+      "SID": 1216,
+      "Scale": [
+        1.30000055,
+        1.30000162,
+        1.30000114
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        261.2392,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        406.008,
+        24.383,
+        -282.584
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322005,
+      "SID": 1216,
+      "Scale": [
+        1.30000019,
+        1.30000007,
+        1.3
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        261.2392,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        406.9732,
+        24.1309986,
+        -282.551544
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322006,
+      "SID": 1216,
+      "Scale": [
+        1.30000019,
+        1.30000007,
+        1.3
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        31.3187027,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        403.111,
+        23.947,
+        -240.676
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321005,
+      "SID": 1215,
+      "Scale": [
+        1.0,
+        1.00000024,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        333.6534,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        404.091,
+        24.14,
+        -241.208
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322007,
+      "SID": 1216,
+      "Scale": [
+        1.3,
+        1.30000019,
+        1.30000019
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        101.726166,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        375.864,
+        26.165,
+        -235.155
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321006,
+      "SID": 1215,
+      "Scale": [
+        1.00000012,
+        1.00000012,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        195.991074,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        376.763428,
+        26.043,
+        -235.325287
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322008,
+      "SID": 1216,
+      "Scale": [
+        1.30000234,
+        1.3000015,
+        1.30000114
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        81.53415,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        358.4,
+        22.845,
+        -277.27
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 321007,
+      "SID": 1215,
+      "Scale": [
+        1.00000024,
+        1.00000024,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        175.799072,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        359.3028,
+        22.7229977,
+        -277.119354
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 322009,
+      "SID": 1216,
+      "Scale": [
+        1.30000257,
+        1.30000162,
+        1.30000114
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    }
+  ],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "movebuildpos": null,
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [],
+    "transfer": []
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

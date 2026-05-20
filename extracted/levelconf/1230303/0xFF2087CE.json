@@ -1,0 +1,1786 @@
+{
+  "LineLoc": 2,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 4,
+          "param": [
+            {
+              "1518": 10
+            },
+            [
+              [
+                1,
+                100
+              ]
+            ]
+          ],
+          "type": "Npc"
+        },
+        {
+          "func": 11,
+          "param": [
+            1033,
+            0
+          ],
+          "type": "Challenge"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 19,
+          "param": [],
+          "type": "Challenge"
+        }
+      ],
+      "Cond": {
+        "param": [
+          3,
+          1
+        ],
+        "rule": 1
+      }
+    }
+  ],
+  "area": 1,
+  "bornpos": [
+    {
+      "Facing": [
+        1.78813892e-07,
+        0.0,
+        -1.0
+      ],
+      "Pos": [
+        3.92,
+        3.16,
+        -2.11
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        1.78813892e-07,
+        0.0,
+        -1.0
+      ],
+      "Pos": [
+        5.919993,
+        3.16,
+        -4.10998964
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        1.78813892e-07,
+        0.0,
+        -1.0
+      ],
+      "Pos": [
+        9.919991,
+        3.16,
+        -4.11000967
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        1.78813892e-07,
+        0.0,
+        -1.0
+      ],
+      "Pos": [
+        11.9199686,
+        3.16,
+        -2.110021
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [],
+  "dynaob": [],
+  "initbuild": [
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            11.0,
+            3.5,
+            -10.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            5.0,
+            3.5,
+            -10.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        5.0,
+        3.5,
+        -10.0
+      ],
+      "Perform": [],
+      "Prefab": 1166001,
+      "SID": 1166,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            5.0,
+            4.5,
+            -20.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            11.0,
+            4.5,
+            -20.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        11.0,
+        4.5,
+        -20.0
+      ],
+      "Perform": [],
+      "Prefab": 1166002,
+      "SID": 1166,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            8.0,
+            2.0,
+            -4.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 3.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        8.0,
+        2.0,
+        -5.0
+      ],
+      "Perform": [],
+      "Prefab": 1170003,
+      "SID": 1170,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            8.0,
+            5.4,
+            -36.5
+          ],
+          "MoveInterval": 50,
+          "Speed": 2.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            8.0,
+            5.4,
+            -32.5
+          ],
+          "MoveInterval": 50,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        180.0,
+        180.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        8.0,
+        5.4,
+        -32.5
+      ],
+      "Perform": [],
+      "Prefab": 1173002,
+      "SID": 1173,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            8.0,
+            6.4,
+            -49.5
+          ],
+          "MoveInterval": 150,
+          "Speed": 3.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            8.0,
+            6.4,
+            -52.5
+          ],
+          "MoveInterval": 50,
+          "Speed": 3.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        8.0,
+        6.4,
+        -52.5
+      ],
+      "Perform": [],
+      "Prefab": 1172001,
+      "SID": 1172,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            10.51,
+            -48.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.51,
+        -47.0
+      ],
+      "Perform": [],
+      "Prefab": 1167001,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            10.51,
+            -48.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.51,
+        -47.0
+      ],
+      "Perform": [],
+      "Prefab": 1167002,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            8.6,
+            -40.79
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        9.1,
+        -41.66
+      ],
+      "Perform": [],
+      "Prefab": 1167003,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            8.6,
+            -40.79
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        9.1,
+        -41.66
+      ],
+      "Perform": [],
+      "Prefab": 1167004,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            11.51,
+            -37.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        11.51,
+        -36.0
+      ],
+      "Perform": [],
+      "Prefab": 1167006,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            11.51,
+            -37.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        11.51,
+        -36.0
+      ],
+      "Perform": [],
+      "Prefab": 1167005,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            9.6,
+            -29.789999
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.1,
+        -30.66
+      ],
+      "Perform": [],
+      "Prefab": 1167008,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            9.6,
+            -29.789999
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.1,
+        -30.66
+      ],
+      "Perform": [],
+      "Prefab": 1167007,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            11.51,
+            -25.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        11.51,
+        -24.0
+      ],
+      "Perform": [],
+      "Prefab": 1167011,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            11.51,
+            -25.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        11.51,
+        -24.0
+      ],
+      "Perform": [],
+      "Prefab": 1167012,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            9.6,
+            -17.789999
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 12,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.1,
+        -18.66
+      ],
+      "Perform": [],
+      "Prefab": 1167010,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            9.6,
+            -17.789999
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        30.0000038
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        10.1,
+        -18.66
+      ],
+      "Perform": [],
+      "Prefab": 1167009,
+      "SID": 1167,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            17.01,
+            12.0,
+            -39.49
+          ],
+          "MoveInterval": 50,
+          "Speed": 4.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            25.01,
+            12.0,
+            -39.49
+          ],
+          "MoveInterval": 50,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        90.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        25.01,
+        12.0,
+        -39.49
+      ],
+      "Perform": [],
+      "Prefab": 1174001,
+      "SID": 1174,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.9900017,
+            12.0,
+            -39.49
+          ],
+          "MoveInterval": 50,
+          "Speed": 4.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            36.99,
+            12.0,
+            -39.49
+          ],
+          "MoveInterval": 50,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        90.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        36.99,
+        12.0,
+        -39.49
+      ],
+      "Perform": [],
+      "Prefab": 1174002,
+      "SID": 1174,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            27.01,
+            12.0,
+            -27.49
+          ],
+          "MoveInterval": 10,
+          "Speed": 8.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            19.01,
+            12.0,
+            -27.49
+          ],
+          "MoveInterval": 10,
+          "Speed": 8.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        90.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        19.01,
+        12.0,
+        -27.49
+      ],
+      "Perform": [],
+      "Prefab": 1174003,
+      "SID": 1174,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            36.9899979,
+            12.0,
+            -27.49
+          ],
+          "MoveInterval": 10,
+          "Speed": 8.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.9899979,
+            12.0,
+            -27.49
+          ],
+          "MoveInterval": 10,
+          "Speed": 8.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        90.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.99,
+        12.0,
+        -27.49
+      ],
+      "Perform": [],
+      "Prefab": 1174004,
+      "SID": 1174,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            11.0,
+            -15.49
+          ],
+          "MoveInterval": 50,
+          "Speed": 2.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            28.0,
+            13.0,
+            -15.49
+          ],
+          "MoveInterval": 100,
+          "Speed": 2.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        90.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        28.0,
+        13.0,
+        -15.49
+      ],
+      "Perform": [],
+      "Prefab": 1175001,
+      "SID": 1175,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            48.0,
+            -0.3,
+            -23.58
+          ],
+          "MoveInterval": 0,
+          "Speed": 8.0
+        }
+      },
+      "Angle": [
+        300.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        48.0,
+        0.57,
+        -23.08
+      ],
+      "Perform": [],
+      "Prefab": 1170001,
+      "SID": 1170,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            48.0,
+            6.0,
+            -30.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 10.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        48.0,
+        6.0,
+        -29.0
+      ],
+      "Perform": [],
+      "Prefab": 1170002,
+      "SID": 1170,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            43.0,
+            1.0,
+            -45.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        43.0,
+        6.0,
+        -15.0
+      ],
+      "Perform": [],
+      "Prefab": 1168001,
+      "SID": 1168,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            48.0,
+            1.0,
+            -45.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 200,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        48.0,
+        6.0,
+        -15.0
+      ],
+      "Perform": [],
+      "Prefab": 1168002,
+      "SID": 1168,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            53.0,
+            1.0,
+            -45.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 400,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        53.0,
+        6.0,
+        -15.0
+      ],
+      "Perform": [],
+      "Prefab": 1168003,
+      "SID": 1168,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            48.0,
+            1.0,
+            -45.0
+          ],
+          "MoveInterval": 0,
+          "Speed": 4.0
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 600,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        48.0,
+        6.0,
+        -15.0
+      ],
+      "Perform": [],
+      "Prefab": 1168005,
+      "SID": 1168,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            44.0,
+            11.0,
+            -18.5
+          ],
+          "MoveInterval": 50,
+          "Speed": 2.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            50.0,
+            11.0,
+            -18.5
+          ],
+          "MoveInterval": 50,
+          "Speed": 2.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        50.0,
+        11.0,
+        -18.5
+      ],
+      "Perform": [],
+      "Prefab": 1171001,
+      "SID": 1171,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            53.0,
+            17.0,
+            -15.0
+          ],
+          "MoveInterval": 100,
+          "Speed": 2.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            53.0,
+            12.0,
+            -17.5
+          ],
+          "MoveInterval": 100,
+          "Speed": 2.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 0,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        53.0,
+        12.0,
+        -17.5
+      ],
+      "Perform": [],
+      "Prefab": 1171002,
+      "SID": 1171,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            43.0,
+            17.0,
+            -14.5
+          ],
+          "MoveInterval": 100,
+          "Speed": 3.0
+        },
+        "102": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            43.0,
+            19.0,
+            -14.5
+          ],
+          "MoveInterval": 0,
+          "Speed": 2.0
+        },
+        "103": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            43.0,
+            19.0,
+            -11.5
+          ],
+          "MoveInterval": 0,
+          "Speed": 3.0
+        },
+        "104": {
+          "AcceSpeed": 0.0,
+          "EndPos": [
+            43.0,
+            17.0,
+            -11.5
+          ],
+          "MoveInterval": 0,
+          "Speed": 2.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "DelayTime": 200,
+      "Live": 0,
+      "MovePlaneType": 1,
+      "Origin": [
+        43.0,
+        17.0,
+        -11.5
+      ],
+      "Perform": [],
+      "Prefab": 1171003,
+      "SID": 1171,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 3,
+        "param": [],
+        "type": "Goal"
+      }
+    ],
+    "Cond": {
+      "param": [
+        [
+          3
+        ],
+        4
+      ],
+      "rule": 19
+    }
+  },
+  "lineob": [],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [
+      {
+        "Facing": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "GlobalPrefab": 1514002,
+        "Paths": [],
+        "Pos": [
+          29.09,
+          13.0,
+          -8.0
+        ],
+        "SID": 1514,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "transfer": [
+      {
+        "Facing": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "GlobalPrefab": 1045003,
+        "Paths": [],
+        "Pos": [
+          8.1,
+          5.0,
+          -0.99
+        ],
+        "SID": 1045,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          1.00000012,
+          0.0,
+          -1.1920929e-07
+        ],
+        "GlobalPrefab": 1045002,
+        "Paths": [],
+        "Pos": [
+          23.05,
+          15.18,
+          -11.54
+        ],
+        "SID": 1045,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    3,
+    4
+  ],
+  "summonarea": [],
+  "survivalData": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "windsummonpos": null
+}

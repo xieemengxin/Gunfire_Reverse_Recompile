@@ -1,0 +1,1592 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 1,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 13,
+          "param": [
+            {
+              "1021": 10,
+              "1025": 10
+            },
+            {
+              "2": {
+                "1": 5,
+                "2": 10
+              },
+              "3": {
+                "2": 5,
+                "3": 10
+              }
+            },
+            0
+          ],
+          "type": "TriggerBuild"
+        },
+        {
+          "func": 12,
+          "param": [
+            1,
+            {
+              "3": 100
+            },
+            [
+              [
+                1,
+                50
+              ]
+            ],
+            0,
+            0
+          ],
+          "type": "AreaMonster"
+        },
+        {
+          "func": 12,
+          "param": [
+            1,
+            {
+              "2": 100
+            },
+            [
+              [
+                1,
+                50
+              ]
+            ],
+            0,
+            1
+          ],
+          "type": "AreaMonster"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 12,
+          "param": [
+            1,
+            {
+              "1": 100
+            },
+            [
+              [
+                1,
+                50
+              ]
+            ],
+            0,
+            0
+          ],
+          "type": "AreaMonster"
+        },
+        {
+          "func": 12,
+          "param": [
+            1,
+            {
+              "4": 100,
+              "5": 100
+            },
+            [
+              [
+                1,
+                50
+              ]
+            ],
+            0,
+            0
+          ],
+          "type": "AreaMonster"
+        }
+      ],
+      "Cond": {
+        "param": [
+          1,
+          0,
+          1
+        ],
+        "rule": 5
+      }
+    }
+  ],
+  "area": 2,
+  "bornpos": [
+    {
+      "Facing": [
+        0.5776158,
+        0.0,
+        -0.816309
+      ],
+      "Pos": [
+        -23.64641,
+        15.1039162,
+        128.2039
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.8138005,
+        0.0,
+        -0.5811442
+      ],
+      "Pos": [
+        -32.9881935,
+        15.1169167,
+        117.728607
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.6445704,
+        0.0,
+        -0.7645452
+      ],
+      "Pos": [
+        -29.3758621,
+        14.7199163,
+        123.236481
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.5814477,
+        0.0,
+        -0.81358397
+      ],
+      "Pos": [
+        -26.8381958,
+        15.0739164,
+        125.8376
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [
+    {
+      "Angle": [
+        270.0,
+        134.999954,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        -17.37,
+        10.03,
+        110.04
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {}
+          ],
+          "IntervalTimeList": [
+            250
+          ],
+          "Perform": 1618,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1025003,
+      "SID": 1025,
+      "Scale": [
+        0.500000238,
+        0.5000001,
+        0.5000001
+      ],
+      "Shape": 1,
+      "Size": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "Angle": [
+        270.0,
+        134.999954,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        -8.36,
+        10.03,
+        108.75
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {}
+          ],
+          "IntervalTimeList": [
+            250
+          ],
+          "Perform": 1618,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1025001,
+      "SID": 1025,
+      "Scale": [
+        0.500000238,
+        0.5000001,
+        0.5000001
+      ],
+      "Shape": 1,
+      "Size": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "Angle": [
+        270.0,
+        134.999954,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        -15.8,
+        10.03,
+        101.31
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {}
+          ],
+          "IntervalTimeList": [
+            250
+          ],
+          "Perform": 1618,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1025002,
+      "SID": 1025,
+      "Scale": [
+        0.500000238,
+        0.5000001,
+        0.5000001
+      ],
+      "Shape": 1,
+      "Size": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        45.0000267,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        -24.07,
+        13.11,
+        101.36
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {}
+          ],
+          "IntervalTimeList": [
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 100491,
+      "SID": 1021,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        224.999969,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        -10.851,
+        13.11,
+        120.199
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {}
+          ],
+          "IntervalTimeList": [
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1021001,
+      "SID": 1021,
+      "Scale": [
+        0.500000238,
+        0.5,
+        0.500000238
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ]
+    }
+  ],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 10,
+        "param": [
+          1041101,
+          0
+        ],
+        "type": "Build"
+      }
+    ],
+    "Cond": {
+      "param": [
+        [
+          1
+        ]
+      ],
+      "rule": 3
+    }
+  },
+  "lineob": [
+    {
+      "Angle": [
+        0.0,
+        315.000061,
+        0.0
+      ],
+      "Center": [
+        -0.005812106,
+        2.956026,
+        -0.2
+      ],
+      "GlobalArea": 0,
+      "NextArea": 8,
+      "Origin": [
+        -5.66,
+        9.45,
+        98.73
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 1041101,
+      "SID": 1124,
+      "Scale": [
+        1.19999981,
+        1.0,
+        1.19999981
+      ],
+      "Shape": 1,
+      "Size": [
+        4.6,
+        6.2,
+        0.5
+      ],
+      "Source": 0,
+      "Transfer": {}
+    },
+    {
+      "Angle": [
+        0.0,
+        135.000137,
+        0.0
+      ],
+      "Center": [
+        -0.005812106,
+        2.956026,
+        -0.2
+      ],
+      "GlobalArea": 0,
+      "NextArea": 8,
+      "Origin": [
+        -32.87,
+        14.541,
+        125.52
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 1041102,
+      "SID": 1124,
+      "Scale": [
+        1.19999981,
+        1.0,
+        1.19999981
+      ],
+      "Shape": 1,
+      "Size": [
+        4.6,
+        6.2,
+        0.5
+      ],
+      "Source": 0,
+      "Transfer": {}
+    },
+    {
+      "Angle": [
+        0.0,
+        41.84593,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        -8.940697e-08,
+        -1.937151e-07
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -12.852,
+        10.53,
+        93.355
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10502,
+      "SID": 1005,
+      "Scale": [
+        0.700000048,
+        0.7,
+        0.700000048
+      ],
+      "Shape": 1,
+      "Size": [
+        0.91872,
+        1.74582314,
+        0.91872
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        0.0,
+        41.84593,
+        0.0
+      ],
+      "Center": [
+        1.49011612e-08,
+        -1.49011612e-08,
+        -7.4505806e-08
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -12.4730444,
+        10.190999,
+        93.66135
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10602,
+      "SID": 1006,
+      "Scale": [
+        0.700000048,
+        0.7,
+        0.700000048
+      ],
+      "Shape": 1,
+      "Size": [
+        0.851370931,
+        0.7946291,
+        0.824108
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        352.532043,
+        114.921761,
+        66.870636
+      ],
+      "Center": [
+        0.0,
+        8.940697e-08,
+        -5.96046448e-08
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -13.3184061,
+        10.1849985,
+        93.91505
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10702,
+      "SID": 1007,
+      "Scale": [
+        0.7000004,
+        0.7000003,
+        0.7000001
+      ],
+      "Shape": 1,
+      "Size": [
+        0.815324,
+        1.09973311,
+        0.843753
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        0.0,
+        209.8128,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        -8.940697e-08,
+        -1.937151e-07
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -3.65,
+        10.45,
+        112.205
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10503,
+      "SID": 1005,
+      "Scale": [
+        0.7000002,
+        0.7,
+        0.7000002
+      ],
+      "Shape": 1,
+      "Size": [
+        0.91872,
+        1.74582314,
+        0.91872
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        352.532043,
+        282.8886,
+        66.87068
+      ],
+      "Center": [
+        0.0,
+        8.940697e-08,
+        -5.96046448e-08
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -3.0770824,
+        10.1049986,
+        111.754471
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10504,
+      "SID": 1007,
+      "Scale": [
+        0.7000003,
+        0.7000003,
+        0.7
+      ],
+      "Shape": 1,
+      "Size": [
+        0.815324,
+        1.09973311,
+        0.843753
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        0.0,
+        209.8128,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        -8.940697e-08,
+        -1.937151e-07
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -33.482,
+        10.45,
+        111.774
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10505,
+      "SID": 1005,
+      "Scale": [
+        0.7000002,
+        0.7,
+        0.7000002
+      ],
+      "Shape": 1,
+      "Size": [
+        0.91872,
+        1.74582314,
+        0.91872
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        352.532043,
+        282.8886,
+        66.87068
+      ],
+      "Center": [
+        0.0,
+        8.940697e-08,
+        -5.96046448e-08
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -33.878,
+        10.1049986,
+        112.54
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10506,
+      "SID": 1007,
+      "Scale": [
+        0.7000003,
+        0.7000003,
+        0.7
+      ],
+      "Shape": 1,
+      "Size": [
+        0.815324,
+        1.09973311,
+        0.843753
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        0.0,
+        41.84593,
+        0.0
+      ],
+      "Center": [
+        1.49011612e-08,
+        -1.49011612e-08,
+        -7.4505806e-08
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        -32.74,
+        10.190999,
+        111.352
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10507,
+      "SID": 1006,
+      "Scale": [
+        0.700000048,
+        0.7,
+        0.700000048
+      ],
+      "Shape": 1,
+      "Size": [
+        0.851370931,
+        0.7946291,
+        0.824108
+      ],
+      "Source": 1
+    }
+  ],
+  "monsterarea": [
+    {
+      "center": [
+        -11.7081947,
+        10.2469158,
+        109.618607
+      ],
+      "group": 1,
+      "vertices": [
+        [
+          -11.7273188,
+          10.2469158,
+          110.325455
+        ],
+        [
+          -11.0013466,
+          10.2469158,
+          109.637726
+        ],
+        [
+          -11.6890707,
+          10.2469158,
+          108.911758
+        ],
+        [
+          -12.4150429,
+          10.2469158,
+          109.59948
+        ]
+      ]
+    },
+    {
+      "center": [
+        -12.975193,
+        10.2859163,
+        107.838264
+      ],
+      "group": 1,
+      "vertices": [
+        [
+          -12.9929523,
+          10.2859163,
+          108.545151
+        ],
+        [
+          -12.26831,
+          10.2859163,
+          107.856026
+        ],
+        [
+          -12.9574337,
+          10.2859163,
+          107.131378
+        ],
+        [
+          -13.6820774,
+          10.2859163,
+          107.8205
+        ]
+      ]
+    },
+    {
+      "center": [
+        -14.2384281,
+        9.675917,
+        106.5102
+      ],
+      "group": 1,
+      "vertices": [
+        [
+          -14.2561874,
+          9.675917,
+          107.217087
+        ],
+        [
+          -13.5315437,
+          9.675917,
+          106.527962
+        ],
+        [
+          -14.2206688,
+          9.675917,
+          105.803314
+        ],
+        [
+          -14.9453125,
+          9.675917,
+          106.492439
+        ]
+      ]
+    },
+    {
+      "center": [
+        -12.7714272,
+        10.1869164,
+        112.405716
+      ],
+      "group": 1,
+      "vertices": [
+        [
+          -12.7891865,
+          10.1869164,
+          113.112595
+        ],
+        [
+          -12.0645437,
+          10.1869164,
+          112.423477
+        ],
+        [
+          -12.7536678,
+          10.1869164,
+          111.698837
+        ],
+        [
+          -13.4783115,
+          10.1869164,
+          112.387955
+        ]
+      ]
+    }
+  ],
+  "monsterconf": [],
+  "monsterelitepos": [
+    {
+      "Center": [
+        -8.02,
+        17.13,
+        101.65
+      ],
+      "CheckDropInfo": null,
+      "FixDropPos": null,
+      "HighLimit": 0.0,
+      "ID": 1
+    }
+  ],
+  "monstershowpos": [
+    {
+      "Center": [
+        -2.378195,
+        10.256916,
+        108.1386
+      ],
+      "ID": 1
+    },
+    {
+      "Center": [
+        -0.7881949,
+        10.256916,
+        106.1386
+      ],
+      "ID": 2
+    },
+    {
+      "Center": [
+        -12.2881947,
+        10.256916,
+        102.2786
+      ],
+      "ID": 3
+    },
+    {
+      "Center": [
+        -9.258195,
+        10.256916,
+        105.2386
+      ],
+      "ID": 4
+    }
+  ],
+  "monsterspawn": [
+    {
+      "Angle": [
+        0.0,
+        5.2212286,
+        0.0
+      ],
+      "AssignSID": {},
+      "CheckDropInfo": {
+        "Euler": [
+          0.0,
+          44.99997,
+          0.0
+        ],
+        "Pos": [
+          2.3,
+          11.45,
+          114.7
+        ],
+        "Size": [
+          13.8532782,
+          8.03101,
+          10.756
+        ]
+      },
+      "CustomAI": {},
+      "DefaultAI": {
+        "33": {
+          "AIMethod": 0,
+          "AIParamLv": [
+            5,
+            1
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 600,
+          "DodgeMaxTimes": 3,
+          "GroupHateDelay": 0,
+          "GuardDis": 99.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 4.0,
+          "NewPatrolPos": [],
+          "PatrolFace": [
+            120,
+            30
+          ],
+          "RangedAreaGroup": [
+            6
+          ],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 99.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [
+            1,
+            2
+          ],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 180,
+          "ViewR": 99.0
+        }
+      },
+      "FixDropPos": [
+        -2.378195,
+        10.256916,
+        108.1386
+      ],
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 1,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          1.70859909,
+          10.0796719,
+          111.667747
+        ],
+        [
+          1.01743579,
+          10.0796719,
+          112.39045
+        ],
+        [
+          0.3262724,
+          10.0796719,
+          113.113144
+        ],
+        [
+          -0.364890963,
+          10.0796719,
+          113.835846
+        ]
+      ],
+      "Weight": {
+        "33": 10
+      }
+    },
+    {
+      "Angle": [
+        0.0,
+        5.2212286,
+        0.0
+      ],
+      "AssignSID": {},
+      "CheckDropInfo": {},
+      "CustomAI": {},
+      "DefaultAI": {
+        "3": {
+          "AIMethod": 0,
+          "AIParamLv": [
+            5,
+            1
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 600,
+          "DodgeMaxTimes": 3,
+          "GroupHateDelay": 0,
+          "GuardDis": 15.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 4.0,
+          "NewPatrolPos": [
+            [
+              [
+                -5.90231371,
+                10.4,
+                109.681435
+              ]
+            ],
+            [
+              [
+                -12.95015,
+                10.08,
+                104.587
+              ]
+            ]
+          ],
+          "PatrolFace": [
+            120,
+            30
+          ],
+          "RangedAreaGroup": [
+            6
+          ],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 15.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 180,
+          "ViewR": 15.0
+        }
+      },
+      "FixDropPos": null,
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 2,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          -9.73187,
+          10.1796722,
+          111.851059
+        ],
+        [
+          -10.4545679,
+          10.1796722,
+          111.1599
+        ],
+        [
+          -11.1772661,
+          10.1796722,
+          110.468735
+        ],
+        [
+          -11.8999653,
+          10.1796722,
+          109.777573
+        ],
+        [
+          -10.4230328,
+          10.1796722,
+          112.573761
+        ],
+        [
+          -11.145731,
+          10.1796722,
+          111.882591
+        ],
+        [
+          -11.86843,
+          10.1796722,
+          111.191429
+        ],
+        [
+          -12.5911283,
+          10.1796722,
+          110.500267
+        ],
+        [
+          -11.1141958,
+          10.1796722,
+          113.296455
+        ],
+        [
+          -11.836895,
+          10.1796722,
+          112.605293
+        ],
+        [
+          -12.5595932,
+          10.1796722,
+          111.914131
+        ],
+        [
+          -13.2822914,
+          10.1796722,
+          111.222969
+        ]
+      ],
+      "Weight": {
+        "3": 10
+      }
+    },
+    {
+      "Angle": [
+        0.0,
+        5.2212286,
+        0.0
+      ],
+      "AssignSID": {},
+      "CheckDropInfo": {},
+      "CustomAI": {},
+      "DefaultAI": {
+        "3": {
+          "AIMethod": 0,
+          "AIParamLv": [
+            5,
+            1
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 600,
+          "DodgeMaxTimes": 3,
+          "GroupHateDelay": 0,
+          "GuardDis": 15.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 4.0,
+          "NewPatrolPos": [
+            [
+              [
+                -22.5476856,
+                10.4,
+                101.388565
+              ]
+            ],
+            [
+              [
+                -15.82369,
+                10.4,
+                107.878525
+              ]
+            ]
+          ],
+          "PatrolFace": [
+            120,
+            30
+          ],
+          "RangedAreaGroup": [
+            6
+          ],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 15.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 180,
+          "ViewR": 15.0
+        }
+      },
+      "FixDropPos": null,
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 3,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          -18.4018688,
+          10.21029,
+          103.561058
+        ],
+        [
+          -19.124567,
+          10.210783,
+          102.869896
+        ],
+        [
+          -19.8472652,
+          10.1864414,
+          102.178734
+        ],
+        [
+          -20.5699635,
+          10.1796722,
+          101.487572
+        ],
+        [
+          -19.0930328,
+          10.2331438,
+          104.28376
+        ],
+        [
+          -19.815731,
+          10.211483,
+          103.59259
+        ],
+        [
+          -20.53843,
+          10.1796722,
+          102.901428
+        ],
+        [
+          -21.2611275,
+          10.1796722,
+          102.210266
+        ],
+        [
+          -19.7841949,
+          10.2365255,
+          105.006454
+        ],
+        [
+          -20.5068932,
+          10.1911306,
+          104.315292
+        ],
+        [
+          -21.2295914,
+          10.1796722,
+          103.62413
+        ],
+        [
+          -21.9522915,
+          10.1707306,
+          102.932968
+        ]
+      ],
+      "Weight": {
+        "3": 10
+      }
+    },
+    {
+      "Angle": [
+        0.0,
+        5.2212286,
+        0.0
+      ],
+      "AssignSID": {},
+      "CheckDropInfo": {
+        "Euler": [
+          0.0,
+          134.999908,
+          0.0
+        ],
+        "Pos": [
+          -7.55,
+          17.99,
+          101.15
+        ],
+        "Size": [
+          21.3340473,
+          5.62170649,
+          5.378
+        ]
+      },
+      "CustomAI": {},
+      "DefaultAI": {
+        "33": {
+          "AIMethod": 0,
+          "AIParamLv": [
+            5,
+            1
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 600,
+          "DodgeMaxTimes": 3,
+          "GroupHateDelay": 0,
+          "GuardDis": 99.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 4.0,
+          "NewPatrolPos": [],
+          "PatrolFace": [
+            120,
+            30
+          ],
+          "RangedAreaGroup": [
+            6
+          ],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 99.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [
+            3,
+            4
+          ],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 180,
+          "ViewR": 99.0
+        }
+      },
+      "FixDropPos": [
+        -12.2881947,
+        10.256916,
+        102.2786
+      ],
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 4,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          -10.0577431,
+          16.183424,
+          96.52817
+        ],
+        [
+          -10.7804413,
+          16.2092419,
+          95.8370056
+        ],
+        [
+          -10.7489061,
+          16.192482,
+          97.25087
+        ],
+        [
+          -11.4716053,
+          16.2120171,
+          96.55971
+        ],
+        [
+          -11.4400692,
+          16.2015381,
+          97.97357
+        ],
+        [
+          -12.1627684,
+          16.1863937,
+          97.2824
+        ]
+      ],
+      "Weight": {
+        "33": 10
+      }
+    },
+    {
+      "Angle": [
+        0.0,
+        5.2212286,
+        0.0
+      ],
+      "AssignSID": {},
+      "CheckDropInfo": {
+        "Euler": [
+          0.0,
+          134.999908,
+          0.0
+        ],
+        "Pos": [
+          -7.55,
+          17.99,
+          101.15
+        ],
+        "Size": [
+          21.3340473,
+          5.62170649,
+          5.378
+        ]
+      },
+      "CustomAI": {},
+      "DefaultAI": {
+        "33": {
+          "AIMethod": 0,
+          "AIParamLv": [
+            5,
+            1
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 600,
+          "DodgeMaxTimes": 3,
+          "GroupHateDelay": 0,
+          "GuardDis": 99.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 4.0,
+          "NewPatrolPos": [],
+          "PatrolFace": [
+            120,
+            30
+          ],
+          "RangedAreaGroup": [
+            6
+          ],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 99.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [
+            3,
+            4
+          ],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 180,
+          "ViewR": 99.0
+        }
+      },
+      "FixDropPos": [
+        -9.258195,
+        10.256916,
+        105.2386
+      ],
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 5,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          -2.77774286,
+          16.1796722,
+          103.498169
+        ],
+        [
+          -3.50044131,
+          16.1796722,
+          102.807007
+        ],
+        [
+          -3.468906,
+          16.1796722,
+          104.220871
+        ],
+        [
+          -4.19160461,
+          16.1796722,
+          103.529709
+        ],
+        [
+          -4.16006947,
+          16.2027588,
+          104.943573
+        ],
+        [
+          -4.882768,
+          16.1796722,
+          104.2524
+        ]
+      ],
+      "Weight": {
+        "33": 10
+      }
+    }
+  ],
+  "movebuildpos": null,
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [],
+    "transfer": []
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    6
+  ],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

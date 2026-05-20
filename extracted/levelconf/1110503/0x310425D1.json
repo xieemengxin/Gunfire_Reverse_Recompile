@@ -1,0 +1,133 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 0,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 37,
+          "param": [
+            1237
+          ],
+          "type": "SpanwTriggerCreateMoveBuild"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    }
+  ],
+  "area": 11,
+  "bornpos": [],
+  "dynabuild": [],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 10,
+        "param": [
+          1041101,
+          0
+        ],
+        "type": "Build"
+      }
+    ],
+    "Cond": {}
+  },
+  "lineob": [
+    {
+      "Angle": [
+        0.0,
+        224.999969,
+        0.0
+      ],
+      "Center": [
+        -0.005812106,
+        2.956026,
+        -0.2
+      ],
+      "GlobalArea": 0,
+      "NextArea": 1,
+      "Origin": [
+        -94.36,
+        15.661,
+        113.79
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 1041101,
+      "SID": 1124,
+      "Scale": [
+        1.19999981,
+        1.0,
+        1.19999981
+      ],
+      "Shape": 1,
+      "Size": [
+        4.6,
+        6.2,
+        0.5
+      ],
+      "Source": 0,
+      "Transfer": {}
+    }
+  ],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "movebuildpos": {
+    "0": {
+      "Angle": [
+        0.0,
+        314.999969,
+        0.0
+      ],
+      "BuildSID": 1237,
+      "EndPos": [
+        -105.2,
+        17.89,
+        114.12
+      ],
+      "MoveTime": 4.0,
+      "MoveType": 2,
+      "Origin": [
+        -105.2,
+        12.39,
+        114.12
+      ]
+    }
+  },
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [],
+    "transfer": []
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    23,
+    24
+  ],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

@@ -1,0 +1,263 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 0,
+  "Merge": 1,
+  "SpawnRule": [],
+  "area": 8,
+  "bornpos": [],
+  "dynabuild": [],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [],
+    "Cond": {}
+  },
+  "lineob": [
+    {
+      "Angle": [
+        272.069031,
+        180.000092,
+        323.2979
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        326.804,
+        6.363,
+        286.966
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 331003,
+      "SID": 1215,
+      "Scale": [
+        0.99999994,
+        0.9999999,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        272.068848,
+        180.000275,
+        148.968491
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        322.043,
+        9.721,
+        259.935
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 331004,
+      "SID": 1215,
+      "Scale": [
+        1.0,
+        1.00000024,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        272.068848,
+        179.999954,
+        249.8202
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        300.576,
+        9.354,
+        267.552
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 331005,
+      "SID": 1215,
+      "Scale": [
+        1.00000012,
+        1.00000024,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        326.076,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        322.767,
+        9.686,
+        259.99
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 332001,
+      "SID": 1216,
+      "Scale": [
+        1.30000031,
+        1.30000079,
+        1.30000043
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        10.0719709,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        362.51,
+        0.999,
+        289.372
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 332002,
+      "SID": 1216,
+      "Scale": [
+        1.30000043,
+        1.30000079,
+        1.30000043
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        106.531357,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        337.051,
+        2.74,
+        297.567
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 332003,
+      "SID": 1216,
+      "Scale": [
+        1.30000067,
+        1.300001,
+        1.30000067
+      ],
+      "Shape": 1,
+      "Size": [
+        0.8,
+        0.8,
+        0.6
+      ],
+      "Source": 1
+    }
+  ],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "movebuildpos": null,
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [],
+    "transfer": []
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

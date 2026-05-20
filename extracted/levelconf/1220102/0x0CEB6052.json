@@ -1,0 +1,1220 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 2,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 4,
+          "param": [
+            {
+              "2101": 10,
+              "2102": 10,
+              "2105": 10,
+              "2107": 10,
+              "2109": 10
+            },
+            [
+              [
+                1,
+                100
+              ]
+            ]
+          ],
+          "type": "Npc"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 7,
+          "param": [
+            1138007,
+            100
+          ],
+          "type": "Build"
+        },
+        {
+          "func": 7,
+          "param": [
+            1139001,
+            150
+          ],
+          "type": "Build"
+        },
+        {
+          "func": 7,
+          "param": [
+            1138004,
+            160
+          ],
+          "type": "Build"
+        },
+        {
+          "func": 7,
+          "param": [
+            1138003,
+            200
+          ],
+          "type": "Build"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    }
+  ],
+  "area": 2,
+  "bornpos": [
+    {
+      "Facing": [
+        0.9998003,
+        0.0,
+        0.0199841857
+      ],
+      "Pos": [
+        33.2,
+        5.22000027,
+        49.3000031
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.9998003,
+        0.0,
+        0.0199841857
+      ],
+      "Pos": [
+        35.68,
+        5.22000027,
+        40.7400055
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.9998003,
+        0.0,
+        0.0199841857
+      ],
+      "Pos": [
+        35.72,
+        5.22000027,
+        52.6000061
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.9998003,
+        0.0,
+        0.0199841857
+      ],
+      "Pos": [
+        33.77,
+        5.22000027,
+        44.8500061
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        71.13,
+        8.449999,
+        97.81999
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 5
+            }
+          ],
+          "IntervalTimeList": [
+            300
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1139001,
+      "RollLineID": 8112,
+      "RollTime": 740,
+      "SID": 1139,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        86.57,
+        8.360001,
+        106.990005
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            }
+          ],
+          "IntervalTimeList": [
+            160,
+            320
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1138004,
+      "RollLineID": 8121,
+      "RollTime": 700,
+      "SID": 1138,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        95.87,
+        8.360001,
+        106.990005
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            }
+          ],
+          "IntervalTimeList": [
+            100,
+            100,
+            280,
+            100,
+            280
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1138003,
+      "RollLineID": 8123,
+      "RollTime": 715,
+      "SID": 1138,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        116.979996,
+        8.22,
+        105.41
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 10
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 10
+            }
+          ],
+          "IntervalTimeList": [
+            100,
+            300
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1138007,
+      "RollLineID": 8125,
+      "RollTime": 505,
+      "SID": 1138,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        66.53,
+        8.49,
+        97.81999
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 5
+            }
+          ],
+          "IntervalTimeList": [
+            300
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1139002,
+      "RollLineID": 2111,
+      "RollTime": 740,
+      "SID": 1139,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        91.17,
+        8.360001,
+        106.990005
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 4
+            }
+          ],
+          "IntervalTimeList": [
+            480
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1138001,
+      "RollLineID": 8122,
+      "RollTime": 710,
+      "SID": 1138,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        112.56,
+        8.22,
+        105.41
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "damage_to_hero": 5700,
+              "speed": 10
+            },
+            {
+              "damage_to_hero": 5700,
+              "speed": 10
+            }
+          ],
+          "IntervalTimeList": [
+            300,
+            100
+          ],
+          "Perform": 1638,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1138006,
+      "RollLineID": 8124,
+      "RollTime": 505,
+      "SID": 1138,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 2,
+      "Size": [
+        2.5,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "Action": {
+        "101": {
+          "DelayTime": 0,
+          "EndPos": [
+            109.985992,
+            3.53100014,
+            56.8000031
+          ],
+          "Speed": 1.875
+        },
+        "102": {
+          "DelayTime": 650,
+          "EndPos": [
+            109.985992,
+            3.53100014,
+            64.3
+          ],
+          "Speed": 1.875
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        109.985992,
+        3.53100014,
+        64.3
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "totaltime": 400
+            },
+            {
+              "totaltime": 400
+            }
+          ],
+          "IntervalTimeList": [
+            150,
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 100496,
+      "SID": 1115,
+      "Scale": [
+        0.5000001,
+        0.5,
+        0.5000001
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ],
+      "TotalTime": 1200
+    },
+    {
+      "Action": {
+        "101": {
+          "DelayTime": 0,
+          "EndPos": [
+            109.986,
+            3.53100014,
+            73.1000061
+          ],
+          "Speed": 1.825
+        },
+        "102": {
+          "DelayTime": 650,
+          "EndPos": [
+            109.986,
+            3.53100014,
+            65.8
+          ],
+          "Speed": 1.825
+        }
+      },
+      "Angle": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        109.986,
+        3.53100014,
+        65.8
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "totaltime": 400
+            },
+            {
+              "totaltime": 400
+            }
+          ],
+          "IntervalTimeList": [
+            150,
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 100497,
+      "SID": 1115,
+      "Scale": [
+        0.5000001,
+        0.5,
+        0.5000001
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ],
+      "TotalTime": 1200
+    },
+    {
+      "Action": {
+        "101": {
+          "DelayTime": 0,
+          "EndPos": [
+            57.5,
+            3.4,
+            50.40001
+          ],
+          "Speed": 1.0
+        },
+        "102": {
+          "DelayTime": 650,
+          "EndPos": [
+            57.5,
+            7.4,
+            50.40001
+          ],
+          "Speed": 1.0
+        }
+      },
+      "Angle": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        57.5,
+        7.4,
+        50.40001
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "totaltime": 400
+            },
+            {
+              "totaltime": 400
+            }
+          ],
+          "IntervalTimeList": [
+            150,
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1115001,
+      "SID": 1115,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ],
+      "TotalTime": 1200
+    },
+    {
+      "Action": {
+        "101": {
+          "DelayTime": 0,
+          "EndPos": [
+            57.5,
+            7.4,
+            41.8900146
+          ],
+          "Speed": 1.0
+        },
+        "102": {
+          "DelayTime": 650,
+          "EndPos": [
+            57.5,
+            3.4,
+            41.8900146
+          ],
+          "Speed": 1.0
+        }
+      },
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 360000,
+      "Origin": [
+        57.5,
+        3.4,
+        41.8900146
+      ],
+      "Perform": [
+        {
+          "CustomParam": [
+            {
+              "totaltime": 400
+            },
+            {
+              "totaltime": 400
+            }
+          ],
+          "IntervalTimeList": [
+            150,
+            250
+          ],
+          "Perform": 1608,
+          "Times": 0
+        }
+      ],
+      "Prefab": 1115002,
+      "SID": 1115,
+      "Scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ],
+      "TotalTime": 1200
+    }
+  ],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 3,
+        "param": [],
+        "type": "Goal"
+      }
+    ],
+    "Cond": {
+      "param": [
+        5,
+        1
+      ],
+      "rule": 1
+    }
+  },
+  "lineob": [
+    {
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        -5.96046448e-07,
+        -8.940699e-08,
+        0.919697762
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        33.03,
+        5.65899944,
+        52.99
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200410,
+      "SID": 1018,
+      "Scale": [
+        0.88,
+        0.8800005,
+        0.880000949
+      ],
+      "Shape": 1,
+      "Size": [
+        1.81552362,
+        1.81552362,
+        1.815522
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.265942425
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        32.8109741,
+        4.75299931,
+        39.98503
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200210,
+      "SID": 1228,
+      "Scale": [
+        0.8800001,
+        0.880000055,
+        0.8800005
+      ],
+      "Shape": 1,
+      "Size": [
+        0.49814254,
+        0.473761737,
+        0.5267983
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.312746882
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        32.37497,
+        4.850999,
+        39.9020233
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200310,
+      "SID": 1017,
+      "Scale": [
+        0.880000234,
+        0.880001068,
+        0.880001366
+      ],
+      "Shape": 1,
+      "Size": [
+        0.52224,
+        0.496679962,
+        0.6257881
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        -5.96046448e-07,
+        -8.940699e-08,
+        0.919697762
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        134.53598,
+        4.425,
+        55.30803
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200411,
+      "SID": 1018,
+      "Scale": [
+        0.880001068,
+        0.880000949,
+        0.880001247
+      ],
+      "Shape": 1,
+      "Size": [
+        1.81552362,
+        1.81552362,
+        1.815522
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        -0.00136011839,
+        -0.00040605673,
+        0.5750438
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        132.983,
+        4.656001,
+        55.93303
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200710,
+      "SID": 1229,
+      "Scale": [
+        0.8800005,
+        0.8800005,
+        0.8800006
+      ],
+      "Shape": 1,
+      "Size": [
+        1.13551426,
+        1.15415406,
+        1.15008759
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        272.2807,
+        264.939636,
+        58.1417274
+      ],
+      "Center": [
+        -5.96046448e-07,
+        -8.940699e-08,
+        0.919697762
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        136.59,
+        3.63500118,
+        56.23802
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200412,
+      "SID": 1018,
+      "Scale": [
+        0.879999936,
+        0.8800007,
+        0.8800005
+      ],
+      "Shape": 1,
+      "Size": [
+        1.81552362,
+        1.81552362,
+        1.815522
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        293.950958,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.312746882
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        127.071,
+        3.342,
+        71.15
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200312,
+      "SID": 1017,
+      "Scale": [
+        1.40050042,
+        1.40050018,
+        1.40050077
+      ],
+      "Shape": 1,
+      "Size": [
+        0.52224,
+        0.496679962,
+        0.6257881
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        270.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.265942425
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        126.662979,
+        3.41400051,
+        70.619
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200212,
+      "SID": 1228,
+      "Scale": [
+        0.9400003,
+        0.940000057,
+        0.9400007
+      ],
+      "Shape": 1,
+      "Size": [
+        0.49814254,
+        0.473761737,
+        0.5267983
+      ],
+      "Source": 1
+    },
+    {
+      "Angle": [
+        342.857056,
+        266.060974,
+        353.394562
+      ],
+      "Center": [
+        -0.000285230577,
+        -0.000226818083,
+        0.443461567
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        126.279968,
+        3.52200031,
+        70.80702
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 200110,
+      "SID": 1227,
+      "Scale": [
+        1.40000248,
+        1.40000033,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        0.46133405,
+        0.461334348,
+        0.886923134
+      ],
+      "Source": 1
+    }
+  ],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [
+      {
+        "Facing": [
+          0.3544217,
+          0.0,
+          -0.9350858
+        ],
+        "GlobalPrefab": 1517006,
+        "Paths": [],
+        "Pos": [
+          132.97,
+          3.57000017,
+          78.96001
+        ],
+        "SID": 1517,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "transfer": [
+      {
+        "Facing": [
+          1.00000012,
+          0.0,
+          -1.1920929e-07
+        ],
+        "GlobalPrefab": 1022010,
+        "Paths": [],
+        "Pos": [
+          30.6999969,
+          5.49,
+          41.98001
+        ],
+        "SID": 1022,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          -0.5984273,
+          0.0,
+          -0.8011774
+        ],
+        "GlobalPrefab": 1022012,
+        "Paths": [],
+        "Pos": [
+          143.79,
+          3.59000015,
+          80.26001
+        ],
+        "SID": 1022,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    5
+  ],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

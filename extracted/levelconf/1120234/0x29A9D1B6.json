@@ -1,0 +1,200 @@
+{
+  "GamePlayPoint": null,
+  "LineLoc": 0,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 4,
+          "param": [
+            {
+              "1013": 100
+            },
+            [
+              [
+                1,
+                100
+              ]
+            ]
+          ],
+          "type": "Npc"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    }
+  ],
+  "area": 11,
+  "bornpos": [],
+  "dynabuild": [],
+  "dynaob": [],
+  "geyser": {},
+  "hookropenpc": {},
+  "initbuild": [],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 10,
+        "param": [
+          22311,
+          0
+        ],
+        "type": "Build"
+      }
+    ],
+    "Cond": {}
+  },
+  "lineob": [
+    {
+      "Angle": [
+        356.678925,
+        88.5230942,
+        357.874146
+      ],
+      "Center": [
+        -0.19,
+        3.8,
+        -0.03
+      ],
+      "GlobalArea": 1,
+      "NextArea": 3,
+      "Origin": [
+        154.15,
+        5.9,
+        76.35
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 22311,
+      "SID": 1116,
+      "Scale": [
+        1.00000012,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Size": [
+        9.2,
+        8.5,
+        0.89
+      ],
+      "Source": 0,
+      "Transfer": {
+        "Transfer": {
+          "Center": [
+            157.45639,
+            8.936871,
+            76.12956
+          ],
+          "Facing": [
+            0.997989058,
+            0.05793132,
+            0.0257306751
+          ],
+          "HalfExt": [
+            2.50000024,
+            3.18752718,
+            2.50000048
+          ]
+        },
+        "Trigger": {
+          "Center": [
+            150.534653,
+            9.045475,
+            75.41162
+          ],
+          "Facing": [
+            0.997989058,
+            0.05793132,
+            0.0257306751
+          ],
+          "HalfExt": [
+            2.50000024,
+            3.18752718,
+            2.50000048
+          ]
+        }
+      }
+    },
+    {
+      "Angle": [
+        293.911041,
+        21.89919,
+        359.5035
+      ],
+      "Center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "GlobalArea": 0,
+      "NextArea": 0,
+      "Origin": [
+        121.127,
+        17.561,
+        69.697
+      ],
+      "Other": {
+        "Action": {}
+      },
+      "Prefab": 10301,
+      "SID": 1009,
+      "Scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "Shape": 1,
+      "Size": [
+        1.64325893,
+        1.594024,
+        1.692194
+      ],
+      "Source": 1
+    }
+  ],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [
+    {
+      "Center": [
+        129.6918,
+        12.2269163,
+        70.8386
+      ],
+      "CheckDropInfo": null,
+      "FixDropPos": null,
+      "HighLimit": 0.0,
+      "ID": 1
+    }
+  ],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [],
+  "scenenpc": {
+    "npc": [],
+    "transfer": []
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [],
+  "trapGroup": {},
+  "windsummonpos": null
+}

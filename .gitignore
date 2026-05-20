@@ -1,0 +1,21 @@
+# 游戏封包（大二进制，不入库）
+fls/
+
+# 解包 / 转换 / 反编译的中间产物（可由 fls 再生）
+# 例外：extracted/levelconf（关卡配置 json，需入库）
+extracted/*
+!extracted/levelconf/
+converted/
+decompiled/
+
+# IDA 打开数据库时生成的临时文件（关闭后会打包回 .i64）
+reverse_bin/*.id0
+reverse_bin/*.id1
+reverse_bin/*.id2
+reverse_bin/*.nam
+reverse_bin/*.til
+
+# 杂项
+.DS_Store
+__pycache__/
+*.pyc

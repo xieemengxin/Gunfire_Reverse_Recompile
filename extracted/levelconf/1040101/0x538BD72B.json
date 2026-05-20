@@ -1,0 +1,735 @@
+{
+  "LineLoc": 2,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 13,
+          "param": [
+            {
+              "1180": 10
+            },
+            {
+              "1": {
+                "1": 10
+              },
+              "2": {
+                "1": 10
+              },
+              "3": {
+                "1": 10
+              }
+            },
+            0
+          ],
+          "type": "TriggerBuild"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 7,
+          "param": [
+            26001,
+            0
+          ],
+          "type": "Build"
+        },
+        {
+          "func": 1,
+          "param": [
+            26001,
+            0,
+            4
+          ],
+          "type": "Gate"
+        },
+        {
+          "func": 12,
+          "param": [
+            1,
+            {
+              "1": 10
+            },
+            [
+              [
+                1,
+                10
+              ]
+            ],
+            20,
+            0
+          ],
+          "type": "AreaMonster"
+        }
+      ],
+      "Cond": {
+        "param": [
+          1,
+          1
+        ],
+        "rule": 1
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 15,
+          "param": [
+            1056001,
+            107,
+            0
+          ],
+          "type": "TriggerNPCBehavior"
+        }
+      ],
+      "Cond": {
+        "param": [
+          3,
+          1
+        ],
+        "rule": 1
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 5,
+          "param": [
+            104,
+            1
+          ],
+          "type": "Effect"
+        },
+        {
+          "func": 30,
+          "param": [
+            1180,
+            4261
+          ],
+          "type": "SpawnBuildPassive"
+        }
+      ],
+      "Cond": {
+        "param": [
+          1002,
+          1169,
+          2
+        ],
+        "rule": 22
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 29,
+          "param": [
+            1407,
+            0
+          ],
+          "type": "SpawnNpcVisible"
+        },
+        {
+          "func": 29,
+          "param": [
+            1408,
+            1
+          ],
+          "type": "SpawnNpcVisible"
+        }
+      ],
+      "Cond": {
+        "param": [
+          2,
+          1
+        ],
+        "rule": 1
+      }
+    }
+  ],
+  "area": 1,
+  "bornpos": [
+    {
+      "Facing": [
+        -0.6893668,
+        0.0,
+        -0.724412441
+      ],
+      "Pos": [
+        1663.69006,
+        391.3,
+        1222.96
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        -0.842452466,
+        0.0,
+        -0.5387707
+      ],
+      "Pos": [
+        1665.70007,
+        391.337,
+        1221.14
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        -0.8796485,
+        0.0,
+        -0.475624323
+      ],
+      "Pos": [
+        1665.69006,
+        391.4,
+        1225.46
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        -0.6613124,
+        0.0,
+        -0.7501105
+      ],
+      "Pos": [
+        1667.48,
+        391.5,
+        1222.63
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [
+    {
+      "Angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Live": 0,
+      "Origin": [
+        1631.57,
+        453.78,
+        1284.91
+      ],
+      "Perform": [],
+      "Prefab": 1180001,
+      "SID": 1180,
+      "Scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "Shape": 1,
+      "Size": [
+        3.0,
+        3.0,
+        1.6
+      ]
+    }
+  ],
+  "dynaob": [],
+  "hookropenpc": {},
+  "initbuild": [
+    {
+      "Angle": [
+        0.0,
+        131.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Origin": [
+        1590.77,
+        500.27,
+        1280.56
+      ],
+      "Prefab": 1169001,
+      "SID": 1169,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Side": 2,
+      "Size": [
+        3.0,
+        1.2,
+        1.6
+      ]
+    },
+    {
+      "Angle": [
+        0.0,
+        254.0,
+        0.0
+      ],
+      "Center": [
+        0.0,
+        0.7,
+        0.0
+      ],
+      "Origin": [
+        1637.03,
+        500.53,
+        1273.09
+      ],
+      "Prefab": 1169003,
+      "SID": 1169,
+      "Scale": [
+        1.00000024,
+        1.0,
+        1.00000024
+      ],
+      "Shape": 1,
+      "Side": 2,
+      "Size": [
+        3.0,
+        1.2,
+        1.6
+      ]
+    }
+  ],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 3,
+        "param": [],
+        "type": "Goal"
+      }
+    ],
+    "Cond": {
+      "param": [
+        [
+          1
+        ]
+      ],
+      "rule": 3
+    }
+  },
+  "lineob": [],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [
+    {
+      "Angle": [
+        0.0,
+        195.099991,
+        0.0
+      ],
+      "AssignSID": {
+        "13": [
+          3924
+        ]
+      },
+      "CheckDropInfo": {},
+      "CustomAI": {},
+      "DefaultAI": {
+        "13": {
+          "AIMethod": 1,
+          "AIParamLv": [
+            5
+          ],
+          "BackToBornPos": 0,
+          "BroadcastCatch": 0,
+          "ChooseNewArea": 1,
+          "CurveMoveLine": [],
+          "DefCnt": 0,
+          "DodgeCD": 0,
+          "DodgeMaxTimes": 0,
+          "GroupHateDelay": 0,
+          "GuardDis": 50.0,
+          "GuardTime": 120,
+          "MonsterSID": 0,
+          "NearDis": 2.0,
+          "NewPatrolPos": [],
+          "PatrolFace": [
+            10,
+            100
+          ],
+          "RangedAreaGroup": [],
+          "RangedAreaWeight": {},
+          "SceneAttentionArea": [],
+          "SearchDis": 50.0,
+          "ShowCatchAni": 1,
+          "ShowPosID": [],
+          "ShowWarning": 0,
+          "ShowWay": 0,
+          "SummonAreaGroup": [],
+          "UseGroupHate": 1,
+          "ViewAngle": 120,
+          "ViewR": 50.0
+        }
+      },
+      "FixDropPos": null,
+      "Grade": 0,
+      "HatePrefab": 0,
+      "HateType": "Protege",
+      "HateValue": 0,
+      "Index": 1,
+      "IsElite": 0,
+      "IsFixedFace": 0,
+      "SpawnPos": [
+        [
+          1610.46289,
+          500.1619,
+          1263.487
+        ],
+        [
+          1610.7251,
+          500.1619,
+          1264.45215
+        ],
+        [
+          1611.42786,
+          500.1619,
+          1263.225
+        ],
+        [
+          1611.69006,
+          500.1619,
+          1264.19
+        ]
+      ],
+      "Weight": {
+        "13": 10
+      }
+    }
+  ],
+  "phasechallengepos": {},
+  "posline": {},
+  "relifepos": [
+    {
+      "Facing": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Pos": [
+        1614.95,
+        501.24,
+        1240.23
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Pos": [
+        1612.41,
+        501.24,
+        1240.23
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Pos": [
+        1606.64,
+        501.24,
+        1240.23
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Pos": [
+        1601.26,
+        501.24,
+        1240.23
+      ],
+      "SID": 1001
+    }
+  ],
+  "scenenpc": {
+    "npc": [
+      {
+        "Facing": [
+          0.859852254,
+          0.0,
+          0.510543
+        ],
+        "GlobalPrefab": 1018002,
+        "Paths": [],
+        "Pos": [
+          1632.08008,
+          392.699982,
+          1205.31
+        ],
+        "SID": 1018,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          -0.138309315,
+          0.0,
+          0.9903891
+        ],
+        "GlobalPrefab": 1059001,
+        "Paths": [],
+        "Pos": [
+          1639.38,
+          392.626984,
+          1203.83
+        ],
+        "SID": 1059,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          0.642787635,
+          0.0,
+          -0.7660446
+        ],
+        "GlobalPrefab": 1056001,
+        "Paths": [],
+        "Pos": [
+          1626.73,
+          391.83,
+          1183.36
+        ],
+        "SID": 1056,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          1.00000012,
+          0.0,
+          -1.1920929e-07
+        ],
+        "GlobalPrefab": 1407001,
+        "Paths": [],
+        "Pos": [
+          1583.55,
+          457.699982,
+          1265.26
+        ],
+        "SID": 1407,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          -0.879081547,
+          0.0,
+          -0.476671576
+        ],
+        "GlobalPrefab": 1064001,
+        "Paths": [],
+        "Pos": [
+          1639.24,
+          500.069977,
+          1273.29
+        ],
+        "SID": 1064,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "GlobalPrefab": 1064003,
+        "Paths": [],
+        "Pos": [
+          1604.39,
+          454.847,
+          1257.56
+        ],
+        "SID": 1064,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          -0.6521588,
+          0.0,
+          -0.758082747
+        ],
+        "GlobalPrefab": 1409001,
+        "Paths": [],
+        "Pos": [
+          1631.23,
+          501.84,
+          1285.09
+        ],
+        "SID": 1409,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "Facing": [
+          0.8660253,
+          0.0,
+          -0.5000001
+        ],
+        "GlobalPrefab": 1408001,
+        "Paths": [],
+        "Pos": [
+          1586.43,
+          456.02,
+          1278.02
+        ],
+        "SID": 1408,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "transfer": [
+      {
+        "Facing": [
+          -0.255445927,
+          0.0,
+          -0.966823339
+        ],
+        "GlobalPrefab": 1406001,
+        "Paths": [],
+        "Pos": [
+          1622.38,
+          502.449982,
+          1294.36
+        ],
+        "SID": 1406,
+        "Scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    1,
+    2,
+    3
+  ],
+  "summonarea": [],
+  "survivalData": null,
+  "thundercenterpos": null,
+  "thunderstormsafepos": null,
+  "transfernpc": {},
+  "transferpos": [
+    {
+      "Facing": [
+        0.5061842,
+        0.0,
+        0.8624254
+      ],
+      "Pos": [
+        1592.29,
+        499.9,
+        1242.27
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.5061842,
+        0.0,
+        0.8624254
+      ],
+      "Pos": [
+        1595.46008,
+        499.819977,
+        1239.69
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.1945768,
+        0.0,
+        0.9808873
+      ],
+      "Pos": [
+        1610.87,
+        499.83,
+        1234.66
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        -0.03141073,
+        0.0,
+        0.999506533
+      ],
+      "Pos": [
+        1613.85,
+        499.96,
+        1234.16
+      ],
+      "SID": 1001
+    }
+  ],
+  "trapGroup": {},
+  "windsummmonpos": null,
+  "windsummonpos": null
+}

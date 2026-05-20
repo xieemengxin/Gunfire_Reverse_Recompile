@@ -1,0 +1,54 @@
+{
+  "1201224": {
+    "Difficult": 1,
+    "EnterEffect": 0,
+    "ExtAmount": [
+      2,
+      [
+        212,
+        1,
+        0.3,
+        1,
+        0.7,
+        0
+      ],
+      1
+    ],
+    "ShowNotify": 0,
+    "SpawnRule": [],
+    "goalpos": []
+  },
+  "1201705": {
+    "Difficult": 1,
+    "EnterEffect": 0,
+    "ExtAmount": [
+      2,
+      [
+        212,
+        1,
+        0.3,
+        1,
+        0.7,
+        0
+      ],
+      1
+    ],
+    "ShowNotify": 1,
+    "SpawnRule": [
+      {
+        "Action": [
+          {
+            "func": 5,
+            "param": [],
+            "type": "Goal"
+          }
+        ],
+        "Cond": {
+          "param": [],
+          "rule": 2
+        }
+      }
+    ],
+    "goalpos": []
+  }
+}

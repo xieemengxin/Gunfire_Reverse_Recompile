@@ -1,0 +1,198 @@
+{
+  "LineLoc": 2,
+  "Merge": 0,
+  "SpawnRule": [
+    {
+      "Action": [
+        {
+          "func": 4,
+          "param": [
+            {
+              "1518": 10
+            },
+            [
+              [
+                1,
+                100
+              ]
+            ]
+          ],
+          "type": "Npc"
+        },
+        {
+          "func": 11,
+          "param": [
+            1033,
+            0
+          ],
+          "type": "Challenge"
+        }
+      ],
+      "Cond": {
+        "param": [],
+        "rule": 0
+      }
+    },
+    {
+      "Action": [
+        {
+          "func": 19,
+          "param": [],
+          "type": "Challenge"
+        }
+      ],
+      "Cond": {
+        "param": [
+          1,
+          1
+        ],
+        "rule": 1
+      }
+    }
+  ],
+  "area": 1,
+  "bornpos": [
+    {
+      "Facing": [
+        0.999495447,
+        0.0,
+        -0.0317645073
+      ],
+      "Pos": [
+        20.01,
+        2.435,
+        253.28
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.999615848,
+        0.0,
+        -0.0277181864
+      ],
+      "Pos": [
+        11.35,
+        5.25,
+        254.02
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.99882,
+        0.0,
+        -0.0485639572
+      ],
+      "Pos": [
+        11.14,
+        5.184,
+        257.24
+      ],
+      "SID": 1001
+    },
+    {
+      "Facing": [
+        0.9874968,
+        0.0,
+        0.1576395
+      ],
+      "Pos": [
+        20.0436077,
+        2.32499933,
+        256.845123
+      ],
+      "SID": 1001
+    }
+  ],
+  "dynabuild": [],
+  "dynaob": [],
+  "initbuild": [],
+  "linegoal": {
+    "Action": [
+      {
+        "func": 3,
+        "param": [],
+        "type": "Goal"
+      }
+    ],
+    "Cond": {
+      "param": [
+        [
+          1
+        ],
+        3
+      ],
+      "rule": 19
+    }
+  },
+  "lineob": [],
+  "monsterarea": [],
+  "monsterconf": [],
+  "monsterelitepos": [],
+  "monstershowpos": [],
+  "monsterspawn": [],
+  "posline": {},
+  "scenenpc": {
+    "npc": [
+      {
+        "Facing": [
+          -0.9999686,
+          0.0,
+          0.007941186
+        ],
+        "GlobalPrefab": 1514001,
+        "Paths": [],
+        "Pos": [
+          102.26,
+          4.8,
+          243.83
+        ],
+        "SID": 1514
+      }
+    ],
+    "transfer": [
+      {
+        "Facing": [
+          -1.0,
+          0.0,
+          3.57627869e-07
+        ],
+        "GlobalPrefab": 1045001,
+        "Paths": [],
+        "Pos": [
+          105.68,
+          6.97,
+          244.0
+        ],
+        "SID": 1045
+      },
+      {
+        "Facing": [
+          1.0,
+          0.0,
+          -4.76837158e-07
+        ],
+        "GlobalPrefab": 1045002,
+        "Paths": [],
+        "Pos": [
+          9.122,
+          6.97,
+          255.5
+        ],
+        "SID": 1045
+      }
+    ]
+  },
+  "scenesummon": {
+    "Circle": []
+  },
+  "sightpos": {
+    "ReadyPos": null,
+    "StartPos": {}
+  },
+  "staticevt": [
+    3,
+    1
+  ]
+}
