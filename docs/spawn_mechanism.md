@@ -461,3 +461,56 @@ def LoadResource(sResource, sFile, sSuffix):
   `sResource` 即关卡 `mapid`，对应 `extracted/levelconf/<mapid>/`。
 - 关卡刷怪数据走**逻辑层**（服务端）加载，只改逻辑层即可；客户端层 `LoadResource`（后缀不转 txt）一般不读这些 json，无需改。
 - 外部目录 = `extracted/levelconf/`（`<mapid>/0x<HASH>.json`，6.2 已生成）；用 `manifest.csv` 查某 hash 是哪个关卡/line。改 json 即生效，**无需回包 mdata、无需还原 name**。
+
+---
+
+## 七、怪物词条（Affix / 超级化）系统
+
+刷怪时把部分普通怪随机「超级化」成带前缀的强化精英怪（如「不朽的XX」「烈焰的XX」）——
+给它提级 + 挂一个**词条 perform** + 一个**属性加成 perform**，词条名即显示成怪物前缀。
+
+### 核心
+| 项 | 位置 |
+|----|------|
+| 主模块 | `cl_warmgr/monsterspelement.py` 的 `CMonsterSuperElement` |
+| 触发 | 监听 `MSG_LEVEL_CREATEMONSTER` → `OnCreateMonster`（每只怪生成时，:118） |
+| 挂载 | `cl_monster/mobject.py` 的 `MonsterSuper(iSuperLv, iPlusPF, iAfPF)` |
+
+### 词条清单（`cl_perform/monsteraf/p61XX`，共 22 个）
+
+| 类型 | 词条（SID） |
+|------|------|
+| 属性/防御类（前缀「…的」） | 烈焰的(6101) 腐蚀的 雷霆的 守护的 坚韧的 坚固的 **不朽的(6107)** 治愈的 流血的 披甲的 忠诚的 奉献的 指挥的 分裂的 传承的 分裂后的(6116) |
+| 攻击技能类 | 流星(6117) 落雷 剑气 星轨 电弧 飞剑(6122) |
+
+> 幸存者玩法有平行的一套 `cl_perform/survivormonsteraf/p615X`（同名，6151 起）。
+
+### 赋予流程（`OnCreateMonster` → `SuperMonsterByRule`，:191）
+
+1. **关卡过滤**：大厅 / Boss 关不强化；隐藏关 / 第 0 轮回 / 禁用关走预设 `SuperMonsterOffRule`，普通战斗关走随机规则。
+2. **数量上限**：按层 / 关卡的 `m_SuperConfig`（战场 `wm30XX` 配置）限制 `LevelLimit/LevelLive/RoomLimit/RoomLive`——每关 / 每房间最多几个、同时存活几个。
+3. **是否强化**（`IsCanMonsterSuper`，:87）：排除石化怪 / 宝箱怪 / 已是精英；按 `ChooseRatio` 概率 `Random(100)` 掷骰。
+4. **抽词条**（`RandomMonsterSuperInfo`，:144）：从词条库用 `ChooseKey` **加权随机**抽 1 个；排除同房间已用词条（避免重复）、怪物 `m_BanPF`（禁用词条）、满选时排除不朽 / 治愈(6107/6108)；`AdjustMonsterAf` 再按怪物 `FightType` 微调权重。同时随机一个属性加成 perform `iPlusPF`（来自 `m_AttrPlusPF`）。
+5. **挂上**：`oMonster.MonsterSuper(iSuperLv, iPlusPF, iAfPF)`。
+
+### 词条库配置（`cl_perform/load.py:277` `g_MonsterAfLibrary`）
+
+按 `周目+轮回` 分组，每条 `词条SID: (权重, 单关最大数量)`：
+```python
+1: { 6101:(15,0), ... 6107:(5,0), 6113:(0,0), 6116:(0,0) }
+```
+- 权重决定概率（烈焰 15 > 不朽 5）；权重 `0`（指挥6113、分裂后6116）= 不参与随机（特殊途径获得，如分裂怪死后产生）；第二个数 = 单关该词条上限（0=不限）。
+- `cl_perform/monsteraf/__init__.py` 的 `g_MonsterAfAdjust` 再按 `(周目,轮回,赛季)` + 怪种 `FightType` 对权重加成。
+
+### 效果实现
+
+每个 `p61XX` 是一个 perform，挂 state / 被动。例：**不朽的(6107)** → `MAF_TYPE_IMMORTAL`、`m_DieDisable=1`，挂 state **7951「不朽被动-延迟死亡」**（受致命伤后延迟死亡的临死保护）。
+
+### 改词条行为的入口（均在 data1 / Python，legacy 可回包）
+
+| 想改 | 改哪里 |
+|------|--------|
+| 出现概率 / 每关数量 | `wm30XX.py` 的 `m_SuperConfig`（`ChooseRatio` / 各 `Limit`/`Live`） |
+| 词条权重 / 词条池 | `cl_perform/load.py` 的 `g_MonsterAfLibrary` + `monsteraf/__init__.py` 的 `g_MonsterAfAdjust` |
+| 某词条的效果 | `cl_perform/monsteraf/p61XX`（及其挂的 state） |
+| 新增词条 | 加一个 `p61XX` perform → 在 `g_MonsterAfLibrary` 给它配权重 |
